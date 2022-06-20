@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    background: #ffff;
+}
+header{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-top: 30px;
+    font-weight: bold;
+}
+footer{
+    display: flex;
+    justify-content: center;
+
+}
+.alert{
+    font-size: 10px;
+    color: red;
+}
