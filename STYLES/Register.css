@@ -4,56 +4,72 @@
     font-family: 'poppins',sans-serif ;
    background-color: #fff;
 }
-header{
-    height: 40px;
-    margin-top: 40px;
-    margin-left: 10px;
-    color: #000;
-    font-weight: bold;
-    font-size: 20px;
-    text-align: center;
-}
-footer{
+h2{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    font-size: 40px;
+    font-weight: bold;
+}
+section{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
     border-radius: 15px;
     border: 1px solid#e5e5e5;
-    justify-content: center;
-    padding:50px 100px;
-    margin: 50px 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 40px;
+    padding: 60px;
+    font-size: 40px;
     font-size: larger;
     font-weight: light;
 }
-input{
+.logo{
+    display: flex;
+    align-items: left;
+    padding-left: 10px;
+    color: #25D366;
+    font-size: 80px;
+    font-weight: bold;
+}
+.style{
+    color: #000;
+    
+}
+input, select{
     border-radius: 20px;
     border: 1px solid#25D366;
     height: 40px;
     width: 500px;
 }
-.name, .email, .dob, .country, .state, .password{
+.name .email .date .country .state .password{
+    margin-bottom: 20px;
     font-size: 20px;
-    padding-bottom: 100px;
 }
-.pl{
+.styleInput{
     font-size: 20px;
     text-indent: 10px;
+    margin-bottom: 20px;
+}
+.exception{
+    font-size: 14px;
+    color: #25D366;
+
 }
 .alert{
-    font-size: 10px;
+    font-size: 14px;
     color: red;
+    padding: 0;
+    margin: 0;
 }
-.st, .coun, .dobb{
-    font-family: 'poppins' sans-serif;
-    font-size: 20px;
+.button{
     border-radius: 20px;
-    border: 1px solid#25D366;
+    border: 1px solid #25D366;
     height: 40px;
     width: 500px;
-    text-indent: 10px;
-
-}
-.st{
-    text-transform: lowercase;
-}
-.submit{
-
+    font-size: 18px;
+    margin-top: 20px;
+    background-color: #25D366;
 }

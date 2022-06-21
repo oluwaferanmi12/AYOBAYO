@@ -9,56 +9,67 @@
 </head>
 <body>
     <header class="head">
+        <div class="logo">
+            lo<span class="style">r</span>e<span class="style">m</span>
+        </div>
         <h2>Register</h2>
-
-
     </header>
-    <br>
-    <footer>
+    <section>
         <form action="">
             <div class="">
                 <label class="name" for="name">Name</label>
-                <br>
-                <input class="pl" type="text" id="name" placeholder="enter fullname">
-                <br>
+                <div>
+                    <input class="styleInput" type="text" id="name" placeholder="Enter fullname">
+
+                </div>
                 <div class="alert">
-                    (*field is required)
+                 (*field is required)
+
 
                 </div>
             </div>
             <div class="">
-                <br>
+                
                 <label class="email" for="email">Email</label>
-                <br>
-                <input class="pl" type="text" id="email" placeholder="enter email">
-                <br>
-                <div class="alert">
-                    (*field is required)
-
-                </div>
+            
             </div>
-            <br>
+
             <div class="">
-                <label class="dob"  for="Date of Birth">Date of Birth</label>
-                <br>
 
-                <input class="dobb" type="date" id="date" name="trip-start"
-                       value="yy-mm-dd"
-                       min="1900-01-01" max="2022-12-31">
-                <br>
+                 <input class="styleInput" type="text" id="email" placeholder="Enter email">
+
+            </div>
+                
+                
                 <div class="alert">
                     (*field is required)
 
                 </div>
-    
+            
+            <div class="">
+                <label class="birth date"  for="birth date">Date of Birth</label>
+            </div>    
+            <div class="">
+            <input class="styleInput" type="date" id="date" name="trip-start" value="yyyy-mm-dd" min="1900-01-01" max="2022-12-31">
+
             </div>
-            <br>
+
+
+            
+           <div class="alert">
+                (*field is required)
+
+            </div>
+
+            
             <div class="">
                 <label class="country" for="country">Country</label>
-             <br>
+            </div>
+             
 
-             <select class="coun" id="country" name="country">
-                <option class="coun">select country</option>
+            <select class="styleInput" id="country" name="country">
+             
+                <option class="countries" value="country">select country</option>
                 <option value="AF">Afghanistan</option>
                 <option value="AX">Aland Islands</option>
                 <option value="AL">Albania</option>
@@ -313,87 +324,98 @@
                 <option value="ZW">Zimbabwe</option>
             </select>
 
-             <br>
-             <div class="alert">
+
+
+
+
+             
+            <div class="alert">
+
+                (*field is required)
+            </div>
+
+            <div>
+
+                <label class="state" for="state">State</label> 
+
+            </div>
+
+            <div class = "">
+             <input class="styleInput" type="text" id="state" placeholder=" enter state">
+
+            </div>
+            <div class="exception">
+                (*For Non-nigerians Only*)
+            </div>
+            <select class="styleInput" id="state" name="state">
+
+                <option class="states" value="state">select state</option>
+                <option>ABUJA FCT</option>
+                <option>ABIA</option>
+                <option>ADAMAWA</option>
+                <option>AKWA IBOM</option>
+                <option>ANAMBRA</option>
+                <option>BAUCHI</option>
+                <option>BAYELSA</option>
+                <option>BENUE</option>
+                <option>BORNO</option>
+                <option>CROSS RIVER</option>
+                <option>DELTA</option>
+                <option>EBONYI</option>
+                <option>EDO</option>
+                <option>EKITI</option>
+                <option>ENUGU</option>
+                <option>GOMBE</option>
+                <option>IMO</option>
+                <option>JIGAWA</option>
+                <option>KADUNA</option>
+                <option>KANO</option>
+                <option>KATSINA</option>
+                <option>KEBBI</option>
+                <option>KOGI</option>
+                <option>KWARA</option>  
+                <option>LAGOS</option>
+                <option>NASSARAWA</option>
+                <option>NIGER</option>
+                <option>OGUN</option>
+                <option>ONDO</option>
+                <option>OSUN</option>
+                <option>OYO</option>
+                <option>PLATEAU</option>
+                <option>RIVERS</option>
+                <option>SOKOTO</option>
+                <option>TARABA</option>
+                <option>YOBE</option>
+                <option>ZAMFARA</option>
+            </select>   
+            <div class="alert">
                 (*field is required)
 
             </div>
-            </div>
-            <br>
-            <div class="">
-                <label class="state" for="state">State</label>
-                <br>
-                <input type="text" id="state" placeholder="select or enter state">
-                <select class="st">
-                    <option class="st" value="state">select state</option>
-                    <option>ABUJA FCT</option>
-                    <option>ABIA</option>
-                    <option>ADAMAWA</option>
-                    <option>AKWA IBOM</option>
-                    <option>ANAMBRA</option>
-                    <option>BAUCHI</option>
-                    <option>BAYELSA</option>
-                    <option>BENUE</option>
-                    <option>BORNO</option>
-                    <option>CROSS RIVER</option>
-                    <option>CROSS RIVER</option>
-                    <option>CROSS RIVER</option>
-                    <option>DELTA</option>
-                    <option>EBONYI</option>
-                    <option>EDO</option>
-                    <option>EKITI</option>
-                    <option>ENUGU</option>
-                    <option>GOMBE</option><option>IMO</option>
-                    <option>JIGAWA</option>
-                    <option>KADUNA</option>
-                    <option>KANO</option>
-                    <option>KATSINA</option>
-                    <option>KEBBI</option>
-                    <option>KOGI</option>
-                    <option>KWARA</option>
-                    <option>LAGOS</option>
-                    <option>NASSARAWA</option>
-                    <option>NIGER</option>
-                    <option>OGUN</option>
-                    <option>ONDO</option>
-                    <option>OSUN</option>
-                    <option>OYO</option<option>PLATEAU</option>
-                    <option>RIVERS</option>
-                    <option>SOKOTO</option>
-                    <option>TARABA</option>
-                    <option>YOBE</option>
-                    <option>ZAMFARA</option>
-                    </select>
-                    
 
-
-
-                    
-
-
-                <br>
-                <div class="alert">
-                    (*field is required)
-
-                </div>
-            </div>
-            <br>
-            <div class="">
+           <div class="">
                 <label class="password" for="password">Password</label>
-                <br>
-                <input class="pl" type="text" id="password" placeholder="enter password">
-             <br>
+
+            </div>
+
+
+            <div class="">
+
+
+               <input type="text" class="styleInput" placeholder="Enter password" >
+
+            </div>
+
+                             
                 <div class="alert">
                     (*field is required)
 
                 </div>
-            </div>
-            <br><br><br><br>
-            <div class="submit">
-             <input class="pl" type="submit" value="submit">
-            </div>
-            
+                <div>
+                    <button type="submit" class="button">Register</button>
+                </div>  
         </form>
-    </footer>
+    </section>
 </body>
+
 </html>
