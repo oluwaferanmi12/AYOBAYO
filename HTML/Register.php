@@ -1,3 +1,4 @@
+<?php include '../PHPFILES/regphp.php' ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,20 +14,18 @@
             lo<span class="style">r</span>e<span class="style">m</span>
         </div>
         <h2>Register</h2>
+        <h4><?php echo $totalError ?></h4>
+    
     </header>
     <section>
-        <form action="">
+        <form action="Register.php" method="POST">
             <div class="">
                 <label class="name" for="name">Name</label>
                 <div>
-                    <input class="styleInput" type="text" id="name" placeholder="Enter fullname">
+                    <input class="styleInput" type="text" name="name" id="name" placeholder="Enter fullname">
 
                 </div>
-                <div class="alert">
-                 (*field is required)
-
-
-                </div>
+                <div class="alert"><?php echo $nameError ?></div>
             </div>
             <div class="">
                 
@@ -36,40 +35,33 @@
 
             <div class="">
 
-                 <input class="styleInput" type="text" id="email" placeholder="Enter email">
+                 <input class="styleInput" type="email" name="email" id="email" placeholder="Enter email">
 
-            </div>
+            </div>  
                 
                 
-                <div class="alert">
-                    (*field is required)
-
-                </div>
+            <div class="alert"><?php echo $emailError ?></div>
             
             <div class="">
                 <label class="birth date"  for="birth date">Date of Birth</label>
             </div>    
             <div class="">
-            <input class="styleInput" type="date" id="date" name="trip-start" value="yyyy-mm-dd" min="1900-01-01" max="2022-12-31">
+            <input class="styleInput" type="date" id="date" name="dob" value="yyyy-mm-dd" min="1900-01-01" max="2022-12-31">
 
             </div>
 
 
             
-           <div class="alert">
-                (*field is required)
-
-            </div>
-
+            <div class="alert"><?php echo $dobError ?></div>
             
             <div class="">
                 <label class="country" for="country">Country</label>
             </div>
              
-
-            <select class="styleInput" id="country" name="country">
+            <div class ="styleInput" >Select a country</div>
+            <select class="" id="country" name="country">
              
-                <option class="countries" value="country">select country</option>
+                <option class="countries" value="">select country</option>
                 <option value="AF">Afghanistan</option>
                 <option value="AX">Aland Islands</option>
                 <option value="AL">Albania</option>
@@ -328,11 +320,8 @@
 
 
 
-             
-            <div class="alert">
 
-                (*field is required)
-            </div>
+            <div class="alert"><?php echo $countryError ?> </div>
 
             <div>
 
@@ -341,15 +330,16 @@
             </div>
 
             <div class = "">
-             <input class="styleInput" type="text" id="state" placeholder=" enter state">
+            <input class="styleInput" type="text" id="state" name="state" placeholder=" enter state">
 
             </div>
             <div class="exception">
-                (*For Non-nigerians Only*)
+                (*For Non-nigerians Only*)  
             </div>
-            <select class="styleInput" id="state" name="state">
+            <div class ="styleInput" >Select a State</div>
+            <select class="" id="state" name="state">
 
-                <option class="states" value="state">select state</option>
+                <option class="" value="">select state</option>
                 <option>ABUJA FCT</option>
                 <option>ABIA</option>
                 <option>ADAMAWA</option>
@@ -388,32 +378,20 @@
                 <option>YOBE</option>
                 <option>ZAMFARA</option>
             </select>   
-            <div class="alert">
-                (*field is required)
-
-            </div>
-
-           <div class="">
-                <label class="password" for="password">Password</label>
-
-            </div>
-
+            <div class="alert"><?php  echo $stateError ?></div>
 
             <div class="">
-
-
-               <input type="text" class="styleInput" placeholder="Enter password" >
-
-            </div>
-
-                             
-                <div class="alert">
-                    (*field is required)
+                <label class="name" for="Password">Password</label>
+                <div>
+                    <input class="styleInput" type="password" name="password" id="password" placeholder="Enter a password">
 
                 </div>
-                <div>
-                    <button type="submit" class="button">Register</button>
-                </div>  
+                <div class="alert"><?php echo $passwordError ?></div>
+            </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+            <div>
+                <button type="submit" name = "submit"class="button" >Register</button>
+            </div>  
         </form>
     </section>
 </body>
