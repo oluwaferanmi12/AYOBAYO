@@ -1,4 +1,6 @@
-<?php include '../PHPFILES/regphp.php' ?>
+<?php include '../PHPFILES/regphp.php' ;
+session_start();    
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,7 +37,7 @@
 
             <div class="">
 
-                 <input class="styleInput" type="email" name="email" id="email" placeholder="Enter email">
+                <input class="styleInput" type="email" name="email" id="email" placeholder="Enter email">
 
             </div>  
                 
@@ -392,8 +394,11 @@
             <div>
                 <button type="submit" name = "submit"class="button" >Register</button>
             </div>  
+            <div><a href="Login.php">Login</a></div>
         </form>
+        
     </section>
+    
 </body>
 
 </html>

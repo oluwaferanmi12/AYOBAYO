@@ -1,11 +1,12 @@
 <?php
 include 'db.php';
+include 'functions.php';
 
 
 //$name = $email = $dob  = $country = $state = $password = "";
 if (isset($_POST['submit'])){
 
-
+   // $user_id = $_POST['user_id'];
     $name = $_POST['name'];
     $email = $_POST['email'];
     $dob = $_POST['dob'];
@@ -13,6 +14,7 @@ if (isset($_POST['submit'])){
     $state = $_POST['state'];
     $password = $_POST['password'];
 
+   // $user_id = mysqli_escape_string($conn, $user_id);
     $name = mysqli_escape_string($conn, $name);
     $email = mysqli_escape_string($conn, $email);
     $dob = mysqli_escape_string($conn, $dob);
@@ -22,16 +24,18 @@ if (isset($_POST['submit'])){
     
 
     if(!empty($name) && !empty($email) && !empty($dob) && !empty($country) && !empty($state) && !empty($password)){
+        $user_id = random_num(20); 
         $password = md5($password);
-        $query = 'INSERT INTO users (name, email, dob, country, state, password)';
-        $query .=  "VALUES ('$name', '$email', '$dob', '$country', '$state', '$password') ";
+        $query = 'INSERT INTO users (user_id, name, email, dob, country, state, password)';
+        $query .=  "VALUES ('$user_id','$name', '$email', '$dob', '$country', '$state', '$password') ";
         $result =  mysqli_query($conn, $query);
         if  (!$result) {
             die ('query failed');
         }
-
+        
         $totalError = 'you have registered successfully';
         $nameError = $emailError = $dobError  = $countryError = $stateError = $passwordError = "";
+        header("location: login.php");
 
     }else{
         

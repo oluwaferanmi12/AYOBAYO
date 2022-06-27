@@ -5,6 +5,5 @@ $conn = mysqli_connect(DB[0], DB[1], DB[2], DB[3]);
 //     echo 'database is not connected';
 // }else{
 //     echo 'database is connected';
-// }
+//}
 ?>
-    
