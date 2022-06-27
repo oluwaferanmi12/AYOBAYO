@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="../STYLES/Register.css">
 </head>
 <body>
@@ -14,8 +15,11 @@
             lo<span class="style">r</span>e<span class="style">m</span>
         </div>
         <h2>Register</h2>
-        <h4><?php echo $totalError ?></h4>
-    
+        <div class="alert">
+
+            <?php echo $totalError ?>
+
+        </div>    
     </header>
     <section>
         <form action="Register.php" method="POST">
@@ -25,43 +29,58 @@
                     <input class="styleInput" type="text" name="name" id="name" placeholder="Enter fullname">
 
                 </div>
-                <div class="alert"><?php echo $nameError ?></div>
-            </div>
-            <div class="">
-                
-                <label class="email" for="email">Email</label>
-            
-            </div>
+                <div class="alert">
+                  <?php echo $nameError ?>
 
-            <div class="">
+                </div>
+
+            </div>
+            <div>
+                <div class="">
+                
+                 <label class="email" for="email">Email</label>
+            
+                </div>
+                <div class="">
 
                  <input class="styleInput" type="email" name="email" id="email" placeholder="Enter email">
+                </div>
 
-            </div>  
-                
-                
-            <div class="alert"><?php echo $emailError ?></div>
+                <div class="alert">
+                  <?php echo $emailError ?>
+                </div>
+            </div> 
+            <div>
+               <div class="">
+                 <label class="birth date"  for="birth date">Date of Birth</label>
+               </div>    
+               <div class="">
+                 <input class="styleInput" type="date" id="date" name="dob" value="yyyy-mm-dd" min="1900-01-01" max="2022-12-31">
+               </div>
             
-            <div class="">
-                <label class="birth date"  for="birth date">Date of Birth</label>
-            </div>    
-            <div class="">
-            <input class="styleInput" type="date" id="date" name="dob" value="yyyy-mm-dd" min="1900-01-01" max="2022-12-31">
-
+               <div class="alert">
+                 <?php echo $dobError ?>
+               </div>
+            
             </div>
 
 
-            
-            <div class="alert"><?php echo $dobError ?></div>
-            
-            <div class="">
-                <label class="country" for="country">Country</label>
-            </div>
+            <div>
+               <div class="">
+                  <label class="country" for="country">Country</label>
+                </div>
              
-            <div class ="styleInput" >Select a country</div>
+                <div class ="sub label" >
+                 select a country
+                </div>
+            </div>
             <select class="" id="country" name="country">
              
-                <option class="countries" value="">select country</option>
+                <option class="" value="">
+                    <div class="countries">
+                        select country
+                    </div>
+                </option>
                 <option value="AF">Afghanistan</option>
                 <option value="AX">Aland Islands</option>
                 <option value="AL">Albania</option>
@@ -316,30 +335,36 @@
                 <option value="ZW">Zimbabwe</option>
             </select>
 
-
-
-
-
-
-            <div class="alert"><?php echo $countryError ?> </div>
-
-            <div>
-
-                <label class="state" for="state">State</label> 
-
+            <div class="alert">
+                <?php echo $countryError ?>
             </div>
+
+           
 
             <div class = "">
-            <input class="styleInput" type="text" id="state" name="state" placeholder=" enter state">
+                <div>
+                 <label class="state" for="state">State</label> 
+                </div>
+                <div class="sub label">
+                    enter or select a state
+                </div>
 
+                <div>
+                   <input class="styleInput" type="text" id="state" name="state" placeholder=" Enter state">
+                </div>
+
+                <div class="exception">
+                  (*For Non-nigerians Only*)  
+                </div>
+               
             </div>
-            <div class="exception">
-                (*For Non-nigerians Only*)  
-            </div>
-            <div class ="styleInput" >Select a State</div>
             <select class="" id="state" name="state">
 
-                <option class="" value="">select state</option>
+                <option class="" value="">
+                    <div class="states">
+                        select state
+                    </div>
+                </option>
                 <option>ABUJA FCT</option>
                 <option>ABIA</option>
                 <option>ADAMAWA</option>
@@ -378,7 +403,9 @@
                 <option>YOBE</option>
                 <option>ZAMFARA</option>
             </select>   
-            <div class="alert"><?php  echo $stateError ?></div>
+            <div class="alert">
+                <?php  echo $stateError ?>
+            </div>
 
             <div class="">
                 <label class="name" for="Password">Password</label>
@@ -386,7 +413,9 @@
                     <input class="styleInput" type="password" name="password" id="password" placeholder="Enter a password">
 
                 </div>
-                <div class="alert"><?php echo $passwordError ?></div>
+                <div class="alert">
+                    <?php echo $passwordError ?>
+                </div>
             </div>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
             <div>
