@@ -1,12 +1,9 @@
 <?php
 include 'db.php';
-include 'functions.php';
 
-
-//$name = $email = $dob  = $country = $state = $password = "";
 if (isset($_POST['submit'])){
 
-   // $user_id = $_POST['user_id'];
+
     $name = $_POST['name'];
     $email = $_POST['email'];
     $dob = $_POST['dob'];
@@ -14,28 +11,36 @@ if (isset($_POST['submit'])){
     $state = $_POST['state'];
     $password = $_POST['password'];
 
-   // $user_id = mysqli_escape_string($conn, $user_id);
+
     $name = mysqli_escape_string($conn, $name);
     $email = mysqli_escape_string($conn, $email);
     $dob = mysqli_escape_string($conn, $dob);
     $country = mysqli_escape_string($conn, $country);
     $state = mysqli_escape_string($conn, $state);
     $password = mysqli_escape_string($conn, $password);
-    
-
-    if(!empty($name) && !empty($email) && !empty($dob) && !empty($country) && !empty($state) && !empty($password)){
-        $user_id = random_num(20); 
-        $password = md5($password);
-        $query = 'INSERT INTO users (user_id, name, email, dob, country, state, password)';
-        $query .=  "VALUES ('$user_id','$name', '$email', '$dob', '$country', '$state', '$password') ";
-        $result =  mysqli_query($conn, $query);
-        if  (!$result) {
-            die ('query failed');
-        }
         
-        $totalError = 'you have registered successfully';
+    if(!empty($name) && !empty($email) && !empty($dob) && !empty($country) && !empty($state) && !empty($password)){
+
+        
+        $password = md5($password);
+        $numOFEmail = mysqli_num_rows(mysqli_query($conn, "SELECT email FROM users WHERE email = '$email' "));
+        if($numOFEmail > 0){
+            $sameEmailError = 'Email already Exist';
+        }else{
+            $query = 'INSERT INTO users (user_id, name, email, dob, country, state, password)';
+            $query .=  "VALUES ('$user_id','$name', '$email', '$dob', '$country', '$state', '$password') ";
+            $result =  mysqli_query($conn, $query);
+            if  (!$result) {
+                die ('query failed');
+            
+            }
+
+            $totalError = 'you have registered successfully';
+            $nameError = $emailError = $dobError  = $countryError = $stateError = $passwordError = "";
+            header("location: login.php");
+        }
         $nameError = $emailError = $dobError  = $countryError = $stateError = $passwordError = "";
-        header("location: login.php");
+        $totalError = "";
 
     }else{
         
@@ -70,10 +75,12 @@ if (isset($_POST['submit'])){
             $passwordError = '';
         }
         $totalError = 'Make sure you input all field';
+        $sameEmailError = "";
         
     }
 }else{
-    $nameError = $emailError = $dobError  = $countryError = $stateError = $passwordError = "";
+    $nameError = $emailError = $dobError  = $countryError = $stateError = $passwordError = "" ;
     $totalError = "";
+    $sameEmailError = "";
 }
 ?>
