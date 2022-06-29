@@ -1,6 +1,8 @@
 <?php 
-include '../PHPFILES/loginphp.php' ;
+
+
 session_start();
+include '../PHPFILES/loginphp.php' ;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -18,7 +20,6 @@ session_start();
             lo<span class="style">r</span>e<span class="style">m</span>
         </div>
         <h2>Log in</h2>
-        <h4> <?php echo $info ?></h4>
     </header>
     <section>
         <form action="" method="POST">
@@ -28,14 +29,14 @@ session_start();
             <div>
                 <input class="styleInput" type="email" name="email" id="email" placeholder="Enter email">
             </div>
-            <div><?php echo $emailError ?></div>
+            
             <div class="password">
                 <label for="password">Password</label>    
             </div>
             <div>
                 <input class="styleInput" type="password" name="password" id="password" placeholder="Enter password">
             </div>
-            <div><?php echo $passwordError ?></div>
+            
             <div class="alt">
                 forgot password?
             </div>
@@ -46,11 +47,9 @@ session_start();
             
             
             <div class="alert">
-                <?php   ?>
+                <?php echo $loginError ?>
             </div>
-            <div><a href="Register.php">Sign Up</a></div>
-
-             
+            <div><a href="Register.php">Sign Up</a></div> 
         </form>
     </section>
     

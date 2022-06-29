@@ -1,7 +1,11 @@
 <?php
 include '../PHPFILES/db.php';
-include '../PHPFILES/functions.php';
-$user_data = check_login($con);
+session_start();
+
+if(!$_SESSION['user_id']){
+    header("location : Login.php");
+}
+
 
 
 ?>
@@ -16,6 +20,7 @@ $user_data = check_login($con);
 </head>
 <body>
     <a href="Login.php">Log out</a>
-    <div>Welcome, <?php echo $user_data['email']; ?>  </div>
+    <div>Welcome, <?php echo $_SESSION['email'] ?>  </div>
+    <div> kindly take note that your user id is <?php echo $_SESSION['user_id'] ?></div>
 </body>
 </html>
