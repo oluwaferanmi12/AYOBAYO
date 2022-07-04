@@ -1,4 +1,6 @@
-<?php include '../PHPFILES/regphp.php' ?>
+<?php include '../PHPFILES/regphp.php' ;
+session_start();    
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -417,12 +419,16 @@
                     <?php echo $passwordError ?>
                 </div>
             </div>
+            <div class="alert"> <?php echo $sameEmailError?></div>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
             <div>
                 <button type="submit" name = "submit"class="button" >Register</button>
             </div>  
+            <div><a href="Login.php">Login</a></div>
         </form>
+        
     </section>
+    
 </body>
 
 </html>

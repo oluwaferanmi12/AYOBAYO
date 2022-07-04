@@ -1,3 +1,9 @@
+<?php 
+
+
+session_start();
+include '../PHPFILES/loginphp.php' ;
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,28 +23,34 @@
         <h2>Log in</h2>
     </header>
     <section>
-        <form action="">
+        <form action="" method="POST">
             <div>
                 <label for="email">Email</label>
             </div>
             <div>
-                <input class="styleInput" type="text" id="email" placeholder="Enter email">
+                <input class="styleInput" type="email" name="email" id="email" placeholder="Enter email">
             </div>
+            
             <div class="password">
                 <label for="password">Password</label>    
             </div>
             <div>
-                <input class="styleInput" type="text" id="password" placeholder="Enter password">
+                <input class="styleInput" type="password" name="password" id="password" placeholder="Enter password">
             </div>
+            
             <div class="alt">
                 forgot password?
             </div>
+            
             <div>
-                <button class="button" type="submit" >Log in</button>
-            </div>
+                <button type="submit" name="login" class="button" >Login</button>
+            </div> 
+            
+            
             <div class="alert">
-                (*wrong credentials)
+                <?php echo $loginError ?>
             </div>
+            <div><a href="Register.php">Sign Up</a></div> 
         </form>
     </section>
     
