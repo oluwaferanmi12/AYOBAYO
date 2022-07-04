@@ -85,7 +85,7 @@ input, select{
     width: 500px;
     font-size: 18px;
     margin-top: 20px;
-    background-color: #25D366;
+   background-color: #25D366;
 }
 @media (max-width: 500px) {
     section{
