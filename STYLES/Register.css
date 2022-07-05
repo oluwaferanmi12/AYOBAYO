@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com"
-);
+@import url("https://fonts.googleapis.com");
 *{
     margin: 0;
     padding: 0;
@@ -11,7 +10,7 @@ h2{
     align-items: center;
     justify-content: center;
     padding-top: 20px;
-    font-size: 40px;
+    font-size: 10px;
     font-weight: bold;
 }
 form .section .input{
