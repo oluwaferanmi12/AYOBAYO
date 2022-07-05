@@ -20,13 +20,14 @@ if (isset($_POST['submit'])){
     $state = mysqli_escape_string($conn, $state);
     $password = mysqli_escape_string($conn, $password);
     $sameEmailError = '';
+    $pinLengthError ='';
     if(!empty($name) && !empty($email) && !empty($dob) && !empty($country) && !empty($state) && !empty($password)){
 
         
         $password = md5($password);
         $numOFEmail = mysqli_num_rows(mysqli_query($conn, "SELECT email FROM users WHERE email = '$email' "));
         
-        $pinLengthError = "";
+        
 
         if($lengthOfPassword < 8){
 
@@ -35,6 +36,7 @@ if (isset($_POST['submit'])){
         }elseif($numOFEmail > 0){
             
             $sameEmailError = 'Email already Exist';
+            
 
         
         }else{
@@ -50,6 +52,7 @@ if (isset($_POST['submit'])){
             $nameError = $emailError = $dobError  = $countryError = $stateError = $passwordError = "";
             header("location: login.php");
         }
+        $pinLengthError ='';
         
         $nameError = $emailError = $dobError  = $countryError = $stateError = $passwordError = "";
         $totalError = "";
