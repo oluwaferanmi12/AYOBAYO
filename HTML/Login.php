@@ -13,7 +13,7 @@ include '../PHPFILES/loginphp.php' ;
     <title>Login</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="../STYLES/Login.css">
-</head>="://
+</head>
 <body>
     <header class="head">
 
@@ -28,7 +28,7 @@ include '../PHPFILES/loginphp.php' ;
                 <label for="email">Email</label>
             </div>
             <div>
-                <input class="styleInput" type="email" name="email" id="email" placeholder="Enter email">
+                <input class="styleInput"  name="email" id="email" placeholder="Enter email">
             </div>
             
             <div class="password">
@@ -38,9 +38,6 @@ include '../PHPFILES/loginphp.php' ;
                 <input class="styleInput" type="password" name="password" id="password" placeholder="Enter password">
             </div>
             
-            <div class="alt">
-                forgot password?
-            </div>
             
             <div>
                 <button type="submit" name="login" class="button" >Login</button>

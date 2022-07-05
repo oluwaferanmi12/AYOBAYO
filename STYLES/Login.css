@@ -10,7 +10,7 @@ h2{
     align-items: center;
     justify-content: center;
     padding-top: 20px;
-    font-size: 40px;
+    font-size: 16px;
     font-weight: bold;
 }
 section{
@@ -19,12 +19,11 @@ section{
     justify-content: space-around;
     border-radius: 15px;
     border: 1px solid#e5e5e5;
-    margin-left: 400px;
+    margin-left: 40px;
     margin-right: 400px;
     margin-top: 40px;
     padding: 60px;
-    font-size: 40px;
-    font-size: larger;
+    font-size: 16px;
     font-weight: light;
 }
 .logo{
@@ -59,18 +58,15 @@ input{
     margin: 0;
 }
 .button{
-    border-radius: 20px;
+    border-radius: 2px;
     border: 1px solid #25D366;
     height: 40px;
-    width: 500px;
+    width: 0;
     font-size: 18px;
     margin-top: 20px;
     background-color: #25D366;
 }
-.alt{
-    font-size: 10px;
-    color: red;
-}
+
 .alert{
     font-size: 10px;
     color: red;

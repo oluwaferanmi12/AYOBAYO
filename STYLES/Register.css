@@ -25,12 +25,11 @@ section{
     justify-content: space-around;
     border-radius: 15px;
     border: 1px solid#e5e5e5;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 50px;
+    margin-right: 400px;
     margin-top: 40px;
     padding: 60px;
-    font-size: 40px;
-    font-size: larger;
+    font-size: 16px;
     font-weight: light;
 }
 .logo{
@@ -51,6 +50,9 @@ input, select{
     outline: none;
     height: 40px;
     width: 500px;
+}
+.placeholder{
+    margin-left: 20px;
 }
 .name .email .date .country .state .password{
     font-size: 20px;
