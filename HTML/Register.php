@@ -1,4 +1,5 @@
 <?php include '../PHPFILES/regphp.php' ;
+
 session_start();    
 ?>
 <!DOCTYPE html>
@@ -17,6 +18,7 @@ session_start();
             lo<span class="style">r</span>e<span class="style">m</span>
         </div>
         <h2>Register</h2>
+        <?php //echo $passwordErrr?>
         <div class="alert">
 
             <?php echo $totalError ?>
@@ -420,6 +422,7 @@ session_start();
                 </div>
             </div>
             <div class="alert"> <?php echo $sameEmailError?></div>
+            <div class="alert"> <?php echo $pinLengthError?></div>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
             <div>
                 <button type="submit" name = "submit"class="button" >Register</button>
