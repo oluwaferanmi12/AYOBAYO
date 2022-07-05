@@ -1,17 +1,16 @@
-@import url("https://fonts.googleapis.com"
-);
+@import url("https://fonts.googleapis.com");
 *{
     margin: 0;
     padding: 0;
     font-family: 'poppins',sans-serif ;
-   background-color: #fff;
+    background-color: darkblue;
 }
 h2{
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 20px;
-    font-size:1000px;
+    font-size: 10px;
     font-weight: bold;
 }
 form .section .input{

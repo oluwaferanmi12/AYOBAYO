@@ -34,7 +34,7 @@ session_start();
 
                 </div>
                 <div class="alert">
-                  <?php echo $nameError ?>
+                <?php echo $nameError ?>
 
                 </div>
 

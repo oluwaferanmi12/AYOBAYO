@@ -99,3 +99,34 @@ if (isset($_POST['submit'])){
 ?>
 
 
+
+<?php 
+// if(isset($_POST['submit'])){
+
+//     // grabbinng the data
+//     $name = $_POST['name'];
+//     $email = $_POST['email'];
+//     $dob = $_POST['dob'];
+//     $country = $_POST['country'];
+//     $state = $_POST['state'];
+//     $password = $_POST['password'];
+
+//     //protecting the inputs
+//     $name = mysqli_escape_string($conn, $name);
+//     $email = mysqli_escape_string($conn, $email);
+//     $dob = mysqli_escape_string($conn, $dob);
+//     $country = mysqli_escape_string($conn, $country);
+//     $state = mysqli_escape_string($conn, $state);
+//     $password = mysqli_escape_string($conn, $password);
+
+    // instantiate sign up control class
+    
+
+    // running eerror handlers and user signup
+
+
+    //going back to front page
+//}
+
+
+?>
