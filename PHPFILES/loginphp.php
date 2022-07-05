@@ -4,13 +4,13 @@ include 'db.php' ;
 
 
 
-
+$loginError = '';
 
 if (isset($_POST['login'])){
     
     $email = $_POST['email'];
     $password = $_POST['password'];
-    $loginError = '';
+    
 
     if (!empty($email) && !empty($password)){
         $password = md5($password);
@@ -27,14 +27,18 @@ if (isset($_POST['login'])){
             $_SESSION['email'] = $user_data['email'] ;
             header("location:index.php");
             die;
-            $loginError = '';
         } else{
             $loginError = 'login details is incorrect';
         }
         
     }
-}else{
-    $loginError = '';
 }
 ?>
 
+
+
+<?php   
+
+
+
+?> 
