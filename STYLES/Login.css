@@ -67,12 +67,18 @@ input{
     color: red;
 }
 .question{
-    padding-left: 60px;
+    padding-left: 20px;
     font-size: 10px;
-    color: blue;
+    color: black;
 }
 .redirect{
     font-size: 14px;
     color: red;
+    text-decoration: none;
 }
+form input:focus{
+    border: 1px solid blue;
+    transition: all 0.3s ease;
+}
+        
 

@@ -339,7 +339,7 @@ session_start();
                 <option value="ZW">Zimbabwe</option>
             </select>
 
-            <div class="alert">
+            <div class="erroralert">
                 <?php echo $countryError ?>
             </div>
 
@@ -407,7 +407,7 @@ session_start();
                 <option>YOBE</option>
                 <option>ZAMFARA</option>
             </select>   
-            <div class="alert">
+            <div class="erroralert">
                 <?php  echo $stateError ?>
             </div>
 
@@ -425,7 +425,7 @@ session_start();
             <div class="alert"> <?php echo $pinLengthError?></div>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
             <div>
-                <button type="submit" name = "Register"class="button" >Register</button>
+                <button type="submit" name = "submit" class="button" >Register</button>
             </div> 
             <span class="question">Already have an account?</span>
             <span><a class="redirect" href="Login.php">Log in</a></span> 

@@ -1,6 +1,7 @@
 <?php
 include 'db.php';
 
+echo "Not Working";
 if (isset($_POST['submit'])){
 
 

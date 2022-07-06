@@ -64,12 +64,19 @@ input, select{
     
     font-size: 12px;
     color: blue;
+    margin-top: -20px;
+    margin-bottom: 20px;
 
 }
 .alert{
     font-size: 10px;
     color: red;
     margin-top: -20px;
+    margin-bottom: 20px;
+}
+.erroralert{
+    font-size: 10px;
+    color: red;
     margin-bottom: 20px;
 }
 .button{
@@ -79,8 +86,10 @@ input, select{
     width: 250px;
     font-size: 18px;
    background-color: #25D366;
+   margin-top: 20px;
 }
 .question{
+    padding-left: 20px;
     font-size: 10px;
     color: #000;
     
