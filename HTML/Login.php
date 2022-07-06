@@ -18,7 +18,7 @@ include '../PHPFILES/loginphp.php' ;
     <header class="head">
 
         <div class="logo">
-            lo<span class="style">r</span>e<span class="style">m</span>
+            lo<span class="stylelogo">r</span>e<span class="stylelogo">m</span>
         </div>
         <h2>Log in</h2>
     </header>
@@ -29,6 +29,7 @@ include '../PHPFILES/loginphp.php' ;
             </div>
             <div>
                 <input class="styleInput"  name="email" id="email" placeholder="Enter email">
+                <div class="erroralert" typ>Email is invalid</div>
             </div>
             
             <div class="password">
@@ -36,18 +37,20 @@ include '../PHPFILES/loginphp.php' ;
             </div>
             <div>
                 <input class="styleInput" type="password" name="password" id="password" placeholder="Enter password">
+                <div class="erroralert">Password is invalid</div>
             </div>
             
             
             <div>
                 <button type="submit" name="login" class="button" >Login</button>
             </div> 
+            <span class="question">Don't have an account?</span>
+            <span><a class="redirect" href="Register.php">Sign up</a></span>
             
             
             <div class="alert">
                 <?php echo $loginError ?>
             </div>
-            <div><a href="Register.php">Sign Up</a></div> 
         </form>
     </section>
     

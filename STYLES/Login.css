@@ -4,14 +4,13 @@
     padding: 0;
     font-family: 'poppins',sans-serif;
     background: #ffff;
-    
 }
 h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 200px;
-    font-size: 200px;
+    padding-top: 20px;
+    font-size: 40px;
     font-weight: bold;
 }
 section{
@@ -20,7 +19,7 @@ section{
     justify-content: space-around;
     border-radius: 15px;
     border: 1px solid#e5e5e5;
-    margin-left: 40px;
+    margin-left: 400px;
     margin-right: 400px;
     margin-top: 40px;
     padding: 60px;
@@ -35,7 +34,7 @@ section{
     font-size: 80px;
     font-weight: bold;
 }
-.style{
+.stylelogo{
     color: #000;
 }
 input{
@@ -47,40 +46,33 @@ input{
 }
 
 .styleInput{
-    font-size: 20px;
-    text-indent: 10px;
+    font-size: 15px;
+    text-indent: 20px;
     margin-bottom: 20px;
     
 }
-.alert{
-    font-size: 14px;
-    color: red;
-    padding: 0;
-    margin: 0;
-}
 .button{
-    border-radius: 2px;
+    border-radius: 20px;
     border: 1px solid #25D366;
     height: 40px;
-    width: 0;
+    width: 250px;
     font-size: 18px;
-    margin-top: 20px;
     background-color: #25D366;
 }
 
-.alert{
+.erroralert{
+    margin-top: -20px;
+    margin-bottom: 20px;
     font-size: 10px;
     color: red;
-    padding-left: 220px;
 }
-@media (max-width:500px) {
-    section{
-        max-width: 100%;
-    }
-    
+.question{
+    padding-left: 60px;
+    font-size: 10px;
+    color: blue;
 }
-@media (orientation:landscape) and (max-width:500px) {
-    
+.redirect{
+    font-size: 14px;
+    color: red;
 }
 
-    
