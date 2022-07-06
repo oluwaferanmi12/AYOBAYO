@@ -2,8 +2,8 @@
 include '../PHPFILES/db.php';
 session_start();
 
-if(!$_SESSION['user_id']){
-    header("location : Login.php");
+if(!$_SESSION['email']){
+    header("location: login.php");
 }
 
 
@@ -19,7 +19,7 @@ if(!$_SESSION['user_id']){
     <title>Document</title>
 </head>
 <body>
-    <a href="Login.php">Log out</a>
+    <a href="Logout.php">Log out</a>
     <div>Welcome, <?php echo $_SESSION['email'] ?>  </div>
     <div> kindly take note that your user id is <?php echo $_SESSION['user_id'] ?></div>
 </body>

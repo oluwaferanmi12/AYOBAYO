@@ -18,12 +18,6 @@ session_start();
             lo<span class="style">r</span>e<span class="style">m</span>
         </div>
         <h2>Register</h2>
-        <?php //echo $passwordErrr?>
-        <div class="alert">
-
-            <?php echo $totalError ?>
-
-        </div>    
     </header>
     <section>
         <form action="Register.php" method="POST">
@@ -425,7 +419,7 @@ session_start();
             <div class="alert"> <?php echo $pinLengthError?></div>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
             <div>
-                <button type="submit" name = "submit"class="button" >Register</button>
+                <button type="submit" name = "register"class="button" >Register</button>
             </div>  
             <div><a href="Login.php">Login</a></div>
         </form>

@@ -16,7 +16,7 @@ include '../PHPFILES/loginphp.php' ;
 <body>
     <header class="head">
 
-        <div class="logo">
+        <div class="logo">                                                          
             lo<span class="style">r</span>e<span class="style">m</span>
         </div>
         <h2>Log in</h2>

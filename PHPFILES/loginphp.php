@@ -25,12 +25,28 @@ if (isset($_POST['login'])){
             
             $_SESSION['user_id'] = $user_data['id'];
             $_SESSION['email'] = $user_data['email'] ;
+
+            
+
             header("location:index.php");
             die;
         } else{
-            $loginError = 'login details is incorrect';
+            
+            $loginError = 'you do not have an account yet, click on the sign up button';
         }
         
+    }else{
+        if (empty($email)){
+            $eamilError = 'email is required';
+        }else{
+            $emailError = '';
+        }
+        if(empty($password)){
+            $passwordError = 'password is required';
+        }else{
+            $passwordError = '';
+        }
+
     }
 }
 ?>

@@ -1,7 +1,7 @@
 <?php
 include 'db.php';
 
-if (isset($_POST['submit'])){
+if (isset($_POST['register'])){
 
 
     $name = $_POST['name'];
@@ -21,12 +21,12 @@ if (isset($_POST['submit'])){
     $password = mysqli_escape_string($conn, $password);
     $sameEmailError = '';
     $pinLengthError ='';
+    
     if(!empty($name) && !empty($email) && !empty($dob) && !empty($country) && !empty($state) && !empty($password)){
 
         
         $password = md5($password);
         $numOFEmail = mysqli_num_rows(mysqli_query($conn, "SELECT email FROM users WHERE email = '$email' "));
-        
         
 
         if($lengthOfPassword < 8){
@@ -55,7 +55,6 @@ if (isset($_POST['submit'])){
         $pinLengthError ='';
         
         $nameError = $emailError = $dobError  = $countryError = $stateError = $passwordError = "";
-        $totalError = "";
 
     }else{
         
@@ -89,7 +88,6 @@ if (isset($_POST['submit'])){
         }else{
             $passwordError = '';
         }
-        $totalError = 'Make sure you input all field';
         $sameEmailError = "";
         
     }
