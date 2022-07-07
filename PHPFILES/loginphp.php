@@ -38,7 +38,7 @@ if (isset($_POST['login'])){
 
         }else{
             $emailError = 'email has not been registered';
-            $passwordError = 'incorrect password';
+            $passwordError = '';
             
         }
     }else{
