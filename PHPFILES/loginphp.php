@@ -38,10 +38,11 @@ if (isset($_POST['login'])){
 
         }else{
             $emailError = 'email has not been registered';
-            $passwordError = '';
+            $passwordError = 'incorrect password';
             
         }
     }else{
+        $emailError = $passwordError = '';
         if(empty($email)){
             $emailError = 'email is required';
             
@@ -49,8 +50,10 @@ if (isset($_POST['login'])){
             $emailError = '';
         }
         if(empty($password)){
-            $password = 'password is required';
+            $passwordError = 'password is required';
             
+        }else{
+            $passwordError = '';
         }
     }
 }else{
