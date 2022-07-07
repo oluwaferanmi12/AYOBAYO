@@ -1,7 +1,7 @@
 <?php
 include 'db.php';
 
-if (isset($_POST['register'])){
+if (isset($_POST['Register'])){
 
 
     $name = $_POST['name'];
@@ -21,7 +21,7 @@ if (isset($_POST['register'])){
     $password = mysqli_escape_string($conn, $password);
     $sameEmailError = '';
     $pinLengthError ='';
-    
+
     if(!empty($name) && !empty($email) && !empty($dob) && !empty($country) && !empty($state) && !empty($password)){
 
         

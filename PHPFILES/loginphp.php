@@ -10,44 +10,51 @@ if (isset($_POST['login'])){
     
     $email = $_POST['email'];
     $password = $_POST['password'];
+    $password = md5($password);
+    
     
 
     if (!empty($email) && !empty($password)){
-        $password = md5($password);
 
-        $query = "SELECT * FROM users WHERE email = '$email'AND password = '$password' ";
+        $query = "SELECT * FROM users WHERE email = '$email' ";
         $result = mysqli_query($conn, $query);
-        
-    
-        if($result && mysqli_num_rows($result) > 0){
+        $row = mysqli_num_rows($result);
+        $dbDetails = mysqli_fetch_assoc($result);
 
-            $user_data =  mysqli_fetch_assoc($result);
-            
-            $_SESSION['user_id'] = $user_data['id'];
-            $_SESSION['email'] = $user_data['email'] ;
+        if($row === 1){
+            $emailError = $passwordError = '';
 
-            
+            if($password !== $dbDetails['password']){
 
-            header("location:index.php");
-            die;
-        } else{
+                $passwordError = 'incorrect password';
+
+            }else{
+
+                $_SESSION['user_id'] = $dbDetails['id'];
+                $_SESSION['email'] = $dbDetails['email'];
+                header("location: index.php");
+
+            }
+
+        }else{
+            $emailError = 'email has not been registered';
+            $passwordError = '';
             
-            $loginError = 'you do not have an account yet, click on the sign up button';
         }
-        
     }else{
-        if (empty($email)){
-            $eamilError = 'email is required';
+        if(empty($email)){
+            $emailError = 'email is required';
+            
         }else{
             $emailError = '';
         }
         if(empty($password)){
-            $passwordError = 'password is required';
-        }else{
-            $passwordError = '';
+            $password = 'password is required';
+            
         }
-
     }
+}else{
+    $emailError = $passwordError = '';
 }
 ?>
 

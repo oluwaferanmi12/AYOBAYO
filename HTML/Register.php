@@ -15,7 +15,7 @@ session_start();
 <body>
     <header class="head">
         <div class="logo">
-            lo<span class="style">r</span>e<span class="style">m</span>
+            lo<span class="stylelogo">r</span>e<span class="stylelogo">m</span>
         </div>
         <h2>Register</h2>
     </header>
@@ -333,7 +333,7 @@ session_start();
                 <option value="ZW">Zimbabwe</option>
             </select>
 
-            <div class="alert">
+            <div class="erroralert">
                 <?php echo $countryError ?>
             </div>
 
@@ -401,7 +401,7 @@ session_start();
                 <option>YOBE</option>
                 <option>ZAMFARA</option>
             </select>   
-            <div class="alert">
+            <div class="erroralert">
                 <?php  echo $stateError ?>
             </div>
 
@@ -419,9 +419,10 @@ session_start();
             <div class="alert"> <?php echo $pinLengthError?></div>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
             <div>
-                <button type="submit" name = "register"class="button" >Register</button>
-            </div>  
-            <div><a href="Login.php">Login</a></div>
+                <button type="submit" name = "Register" class="button" >Register</button>
+            </div> 
+            <span class="question">Already have an account?</span>
+            <span><a class="redirect" href="Login.php">Log in</a></span> 
         </form>
         
     </section>
