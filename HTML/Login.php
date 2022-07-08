@@ -20,9 +20,13 @@ include '../PHPFILES/loginphp.php' ;
         <div class="logo">
             lo<span class="stylelogo">r</span>e<span class="stylelogo">m</span>
         </div>
-        <h2>Log in</h2>
     </header>
+    
     <section>
+    <h2>Log in</h2>
+
+    </section>
+    <section class="container">
         <form action="" method="POST">
             <div>
                 <label for="email">Email</label>

@@ -17,9 +17,11 @@ session_start();
         <div class="logo">
             lo<span class="stylelogo">r</span>e<span class="stylelogo">m</span>
         </div>
-        <h2>Register</h2>
     </header>
     <section>
+        <h2>Register</h2>
+    </section>
+    <section class="container">
         <form action="Register.php" method="POST">
             <div class="">
                 <label class="name" for="name">Name</label>
