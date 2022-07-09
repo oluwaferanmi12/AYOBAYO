@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com"
-);
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -77,6 +76,8 @@ input, select{
     margin-bottom: 100px;
 
 }
+
+
 .styleInput{
     font-size: 15px;
     outline: none;
@@ -92,13 +93,14 @@ input, select{
 
 }
 .alert{
-    font-size: 10px;
+    /* font-size: 1px; */
     color: red;
     margin-top: -20px;
     margin-bottom: 20px;
+    
 }
 .erroralert{
-    font-size: 10px;
+    /* font-size: 10px; */
     color: red;
     margin-bottom: 20px;
 }
@@ -113,13 +115,18 @@ input, select{
 }
 .question{
     padding-left: 20px;
-    font-size: 10px;
+    font-size: 12px;
     color: #000;
     
 }
+
+.stateContainer{
+    margin-bottom: 12px;
+    /* padding-top: 12px; */
+}
 .redirect{
     font-size: 16px;
-    color: red;
+    color:#25D366;
     text-decoration: none;
     
 }

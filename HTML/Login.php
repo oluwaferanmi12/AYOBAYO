@@ -50,6 +50,10 @@ include '../PHPFILES/loginphp.php' ;
             </div> 
             <span class="question">Don't have an account?</span>
             <span><a class="redirect" href="Register.php">Sign up</a></span>
+            <div>
+
+                <?php echo $generalError ?>
+            </div>
             
         </form>
     </section>
