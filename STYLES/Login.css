@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    background: #ffff;
+}
+.head{
+    display: flex;
+    width: 100%;
+    min-height: 50px;
+}
+.container{
+    display: flex;
+    width: 50%;
+    min-height: 40px;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 15px;
+    border: 1px  solid #e5e5e5;
+    padding: 60px;
+    margin-left: 400px;
+    margin-right: 400px;
+    
+}
+.logo{
+    display: flex;
+    align-items: left;
+    color: #25d366; ;
+    font-size: 80px;
+    font-weight: bold;
+}
+.stylelogo{
+    color: #000;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    font-size: 40px;
+    font-weight: bold;
+}
+input{
+    border-radius: 20px;
+    border: 1px solid#25D366;
+    outline: none;
+    height: 40px;
+    width: 500px;
+}
+.styleInput{
+    font-size: 15px;
+    text-indent: 20px;
+    margin-bottom: 20px;
+    
+}
+.button{
+    border-radius: 20px;
+    border: 1px solid #25D366;
+    height: 40px;
+    width: 250px;
+    font-size: 18px;
+    background-color: #25D366;
+}
+
+.erroralert{
+    margin-top: -20px;
+    margin-bottom: 20px;
+    font-size: 10px;
+    color: red;
+}
+.question{
+    padding-left: 20px;
+    font-size: 10px;
+    color: black;
+}
+.redirect{
+    font-size: 14px;
+    color: red;
+    text-decoration: none;
+}
+form input:focus{
+    border: 1px solid blue;
+    transition: all 0.3s ease;
+}
+
+@media (max-width:600px) {
+    .container{
+        max-width: 100%;
+        border: none;
+        border-radius: none;
+        margin-left: 200px;
+    }
+}
+@media (max-width:768px) {
+    .container{
+        max-width: 100%;
+        border: none;
+        border-radius: none;
+        margin-left: 200px;
+    }
+    
+}
+@media (max-width:992px) {
+    .container{
+        max-width: 100%;
+        border: none;
+        border-radius: none;
+        margin-left: 200px;
+    }
+}
+
+

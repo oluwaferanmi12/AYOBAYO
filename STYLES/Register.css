@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif ;
+   background-color: #ffff;
+}
+.head{
+    display: flex;
+    width: 100%;
+    min-height: 50px;
+}
+.container{
+    display: flex;
+    width: 50%;
+    min-height: 40px;
+    justify-content: center;
+    box-sizing: border-box;
+    border-radius: 15px;
+    border: 1px  solid #e5e5e5;
+    padding: 60px;
+    margin-left: 400px;
+    margin-right: 400px;
+    
+}
+.logo{
+    display: flex;
+    align-items: left;
+    color: #25d366; ;
+    font-size: 80px;
+    font-weight: bold;
+}
+.stylelogo{
+    color: #000;
+}
+h2{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10px;
+    font-size: 40px;
+    font-weight: bold;
+}
+input{
+    border-radius: 20px;
+    border: 1px solid#25D366;
+    outline: none;
+    height: 40px;
+    width: 500px;
+}
+.styleInput{
+    font-size: 15px;
+    text-indent: 20px;
+    margin-bottom: 20px;
+    
+}
+/*.button{
+    border-radius: 20px;
+    border: 1px solid #25D366;
+    height: 40px;
+    width: 250px;
+    font-size: 18px;
+    background-color: #25D366;
+}*/
+input, select{
+    border-radius: 20px;
+    border: 1px solid#25D366;
+    outline: none;
+    height: 40px;
+    width: 500px;
+}
+.name .email .date .country .state .password{
+    font-size: 20px;
+}
+.states, .countries{
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+}
+
+
+.styleInput{
+    font-size: 15px;
+    outline: none;
+    text-indent: 20px;
+    margin-bottom: 20px;
+}
+.exception{
+    
+    font-size: 12px;
+    color: blue;
+    margin-top: -20px;
+    margin-bottom: 20px;
+
+}
+.alert{
+    /* font-size: 1px; */
+    color: red;
+    margin-top: -20px;
+    margin-bottom: 20px;
+    
+}
+.erroralert{
+    /* font-size: 10px; */
+    color: red;
+    margin-bottom: 20px;
+}
+.button{
+    border-radius: 20px;
+    border: 1px solid #25D366;
+    height: 40px;
+    width: 250px;
+    font-size: 18px;
+   background-color: #25D366;
+   margin-top: 20px;
+}
+.question{
+    padding-left: 20px;
+    font-size: 12px;
+    color: #000;
+    
+}
+
+.stateContainer{
+    margin-bottom: 12px;
+    /* padding-top: 12px; */
+}
+.redirect{
+    font-size: 16px;
+    color:#25D366;
+    text-decoration: none;
+    
+}
+form input:focus{
+    border: 1px solid blue;
+    transition: all 0.3s ease;
+}
+@media (max-width:600px) {
+    .container{
+        max-width: 100%;
+        border: none;
+        border-radius: none;
+        margin-left: 200px;
+    }
+}
+@media (max-width:768px) {
+    .container{
+        max-width: 100%;
+        border: none;
+        border-radius: none;
+        margin-left: 200px;
+    }
+    
+}
+@media (max-width:992px) {
+    .container{
+        max-width: 100%;
+        border: none;
+        border-radius: none;
+        margin-left: 200px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
