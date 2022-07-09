@@ -1,4 +1,4 @@
-<?php include '../PHPFILES/regphp.php' ;
+<?php include './PHPFILES/regphp.php' ;
 
 session_start();    
 ?>
@@ -10,16 +10,18 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="../STYLES/Register.css">
+    <link rel="stylesheet" href="./STYLES/Register.css">
 </head>
 <body>
     <header class="head">
         <div class="logo">
             lo<span class="stylelogo">r</span>e<span class="stylelogo">m</span>
         </div>
-        <h2>Register</h2>
     </header>
     <section>
+        <h2>Register</h2>
+    </section>
+    <section class="container">
         <form action="Register.php" method="POST">
             <div class="">
                 <label class="name" for="name">Name</label>
@@ -64,19 +66,22 @@ session_start();
 
 
             <div>
-               <div class="">
-                  <label class="country" for="country">Country</label>
+               <div class="" style="margin-bottom:12px">
+                  <label class="country" for="country" >Country</label>
+                <hr style="background:#e5e5e5 ;height:1px; border:none">
+
                 </div>
              
                 <div class ="sub label" >
-                 select a country
+                 Select a country
                 </div>
+                
             </div>
             <select class="" id="country" name="country">
              
                 <option class="" value="">
                     <div class="countries">
-                        select country
+                        Select country
                     </div>
                 </option>
                 <option value="AF">Afghanistan</option>
@@ -333,18 +338,23 @@ session_start();
                 <option value="ZW">Zimbabwe</option>
             </select>
 
+                <hr style="background:#e5e5e5 ;height:1px; border:none; margin-top:12px">
+
+
             <div class="erroralert">
                 <?php echo $countryError ?>
             </div>
 
            
 
-            <div class = "">
-                <div>
-                 <label class="state" for="state">State</label> 
+            <div class = "stateContainer">
+                <div style="margin-bottom:12px">
+                 <label class="state" for="state" >State</label>
+                <hr style="background:#e5e5e5 ;height:1px; border:none">
+
                 </div>
                 <div class="sub label">
-                    enter or select a state
+                    Enter or select a state
                 </div>
 
                 <div>
@@ -400,7 +410,10 @@ session_start();
                 <option>TARABA</option>
                 <option>YOBE</option>
                 <option>ZAMFARA</option>
-            </select>   
+            </select>  
+            
+                <hr style="background:#e5e5e5 ;height:1px; border:none; margin-top:12px">
+            
             <div class="erroralert">
                 <?php  echo $stateError ?>
             </div>
@@ -418,11 +431,13 @@ session_start();
             <div class="alert"> <?php echo $sameEmailError?></div>
             <div class="alert"> <?php echo $pinLengthError?></div>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
-            <div>
+            <div style="text-align:center">
+                <div >
                 <button type="submit" name = "Register" class="button" >Register</button>
             </div> 
             <span class="question">Already have an account?</span>
             <span><a class="redirect" href="Login.php">Log in</a></span> 
+            </div>
         </form>
         
     </section>

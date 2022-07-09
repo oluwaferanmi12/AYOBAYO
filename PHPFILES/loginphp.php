@@ -6,15 +6,16 @@ include 'db.php' ;
 
 $loginError = '';
 
+$emailError = $passwordError = $generalError =  '';
 if (isset($_POST['login'])){
     
     $email = $_POST['email'];
     $password = $_POST['password'];
-    $password = md5($password);
     
     
-
+    
     if (!empty($email) && !empty($password)){
+        $password = md5($password);
 
         $query = "SELECT * FROM users WHERE email = '$email' ";
         $result = mysqli_query($conn, $query);
@@ -22,7 +23,6 @@ if (isset($_POST['login'])){
         $dbDetails = mysqli_fetch_assoc($result);
 
         if($row === 1){
-            $emailError = $passwordError = '';
 
             if($password !== $dbDetails['password']){
 
@@ -42,22 +42,20 @@ if (isset($_POST['login'])){
             
         }
     }else{
-        $emailError = $passwordError = '';
-        if(empty($email)){
+        if(empty($email) && empty($password)){
+            $generalError = "All fields are required";
+        }
+        else if(empty($email)){
+            echo "I Got Here";
             $emailError = 'email is required';
             
-        }else{
-            $emailError = '';
         }
-        if(empty($password)){
+
+        else if(empty($password)){
             $passwordError = 'password is required';
             
-        }else{
-            $passwordError = '';
         }
     }
-}else{
-    $emailError = $passwordError = '';
 }
 ?>
 
