@@ -1,4 +1,4 @@
-<?php include '../PHPFILES/regphp.php' ;
+<?php include './PHPFILES/regphp.php' ;
 
 session_start();    
 ?>
@@ -10,7 +10,7 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="../STYLES/Register.css">
+    <link rel="stylesheet" href="./STYLES/Register.css">
 </head>
 <body>
     <header class="head">
