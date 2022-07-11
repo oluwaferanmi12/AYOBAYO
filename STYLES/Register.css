@@ -141,6 +141,7 @@ form input:focus{
         border-radius: none;
         margin-left: 200px;
         margin-right: -10px;
+        color: red;
     }
     .logo{
         font-size: 40px;
@@ -156,6 +157,7 @@ form input:focus{
         border-radius: none;
         margin-left: 200px;
         margin-right: -10px;
+        color: red;
     }
     .logo{
         font-size: 40px;
