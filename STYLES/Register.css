@@ -140,14 +140,12 @@ form input:focus{
         border: none;
         border-radius: none;
         margin-left: 200px;
-        margin-right: -10px;
-        color: red;
     }
     .logo{
         font-size: 40px;
     }
     h2{
-        margin-bottom: -10px;
+        padding-bottom: -20px;
     }
 }
 @media (max-width:768px) {
@@ -156,14 +154,12 @@ form input:focus{
         border: none;
         border-radius: none;
         margin-left: 200px;
-        margin-right: -10px;
-        color: red;
     }
     .logo{
         font-size: 40px;
     }
     h2{
-        margin-bottom: -10px;
+        margin-bottom: -20px;
     }
     
 }
