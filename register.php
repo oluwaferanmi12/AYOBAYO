@@ -22,7 +22,7 @@ session_start();
         <h2>Register</h2>
     </section>
     <section class="container">
-        <form action="Register.php" method="POST">
+        <form action="register.php" method="POST">
             <div class="">
                 <label class="name" for="name">Name</label>
                 <div>
