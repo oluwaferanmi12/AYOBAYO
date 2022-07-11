@@ -1,3 +1,15 @@
+<?php
+include '../PHPFILES/db.php';
+session_start();
+
+if(!$_SESSION['email']){
+    header("location: login.php");
+}
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,6 +19,8 @@
     <title>Document</title>
 </head>
 <body>
-    TEsing
+    <a href="Logout.php">Log out</a>
+    <div>Welcome, <?php echo $_SESSION['email'] ?>  </div>
+    <div> kindly take note that your user id is <?php echo $_SESSION['user_id'] ?></div>
 </body>
 </html>

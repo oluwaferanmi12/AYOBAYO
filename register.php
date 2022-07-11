@@ -358,7 +358,7 @@ session_start();
                 </div>
 
                 <div>
-                   <input class="styleInput" type="text" id="state" name="state" placeholder=" Enter state">
+                   <input class="styleInput" type="text" id="state" name="nonNigState" placeholder=" Enter state">
                 </div>
 
                 <div class="exception">

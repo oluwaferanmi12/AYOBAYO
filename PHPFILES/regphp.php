@@ -8,6 +8,7 @@ if (isset($_POST['Register'])){
     $email = $_POST['email'];
     $dob = $_POST['dob'];
     $country = $_POST['country'];
+    $nonNigState = $_POST['nonNigState'];
     $state = $_POST['state'];
     $password = $_POST['password'];
     $lengthOfPassword = strlen($password);
@@ -17,12 +18,13 @@ if (isset($_POST['Register'])){
     $email = mysqli_escape_string($conn, $email);
     $dob = mysqli_escape_string($conn, $dob);
     $country = mysqli_escape_string($conn, $country);
+    $nonNigState = mysqli_escape_string($conn, $nonNigState);
     $state = mysqli_escape_string($conn, $state);
     $password = mysqli_escape_string($conn, $password);
     $sameEmailError = '';
     $pinLengthError ='';
 
-    if(!empty($name) && !empty($email) && !empty($dob) && !empty($country) && !empty($state) && !empty($password)){
+    if(!empty($name) && !empty($email) && !empty($dob) && !empty($country) && !empty($nonNigState) &&!empty($state) && !empty($password)){
 
         
         $password = md5($password);
@@ -41,8 +43,8 @@ if (isset($_POST['Register'])){
         
         }else{
             
-            $query = 'INSERT INTO users (name, email, dob, country, state, password)';
-            $query .=  "VALUES ('$name', '$email', '$dob', '$country', '$state', '$password') ";
+            $query = 'INSERT INTO users (name, email, dob, country, nonNigState, state, password)';
+            $query .=  "VALUES ('$name', '$email', '$dob', '$country', '$nonNigState', '$state', '$password') ";
             $result =  mysqli_query($conn, $query);
             if  (!$result) {
                 die ('query failed');
@@ -101,33 +103,4 @@ if (isset($_POST['Register'])){
 
 
 
-<?php 
-// if(isset($_POST['submit'])){
 
-//     // grabbinng the data
-//     $name = $_POST['name'];
-//     $email = $_POST['email'];
-//     $dob = $_POST['dob'];
-//     $country = $_POST['country'];
-//     $state = $_POST['state'];
-//     $password = $_POST['password'];
-
-//     //protecting the inputs
-//     $name = mysqli_escape_string($conn, $name);
-//     $email = mysqli_escape_string($conn, $email);
-//     $dob = mysqli_escape_string($conn, $dob);
-//     $country = mysqli_escape_string($conn, $country);
-//     $state = mysqli_escape_string($conn, $state);
-//     $password = mysqli_escape_string($conn, $password);
-
-    // instantiate sign up control class
-    
-
-    // running eerror handlers and user signup
-
-
-    //going back to front page
-//}
-
-
-?>
