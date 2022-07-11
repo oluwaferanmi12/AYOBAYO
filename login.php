@@ -49,7 +49,7 @@ include './PHPFILES/loginphp.php' ;
                 <button type="submit" name="login" class="button" >Login</button>
             </div> 
             <span class="question">Don't have an account?</span>
-            <span><a class="redirect" href="Register.php">Sign up</a></span>
+            <span><a class="redirect" href="register.php">Sign up</a></span>
             <div>
 
                 <?php echo $generalError ?>
