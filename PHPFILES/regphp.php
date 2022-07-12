@@ -91,7 +91,6 @@ if (isset($_POST['Register'])){
             $passwordError = '';
         }
         $sameEmailError = "";
-        
     }
 }else{
     $nameError = $emailError = $dobError  = $countryError = $stateError = $passwordError = "" ;

@@ -21,7 +21,7 @@ class signupctrl{
     }
 
     private function emptyInput(){
-        //$result;
+        $result = '';   
         if(empty($this-> name) || empty($this-> email) || empty($this-> dob) || empty($this-> country) || empty($this->nonNigState) ||empty($this-> state) || empty($this-> password)){
             $result = true;
         }else{
