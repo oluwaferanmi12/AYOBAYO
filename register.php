@@ -436,7 +436,7 @@ session_start();
                 <button type="submit" name = "Register" class="button" >Register</button>
             </div> 
             <span class="question">Already have an account?</span>
-            <span><a class="redirect" href="Login.php">Log in</a></span> 
+            <span><a class="redirect" href="login.php">Log in</a></span> 
             </div>
         </form>
         
