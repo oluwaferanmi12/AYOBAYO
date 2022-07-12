@@ -2,7 +2,7 @@
 
 
 session_start();
-include '../PHPFILES/loginphp.php' ;
+include './PHPFILES/loginphp.php' ;
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -12,7 +12,7 @@ include '../PHPFILES/loginphp.php' ;
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="../STYLES/Login.css">
+    <link rel="stylesheet" href="./STYLES/Login.css">
 </head>
 <body>
     <header class="head">
@@ -49,7 +49,7 @@ include '../PHPFILES/loginphp.php' ;
                 <button type="submit" name="login" class="button" >Login</button>
             </div> 
             <span class="question">Don't have an account?</span>
-            <span><a class="redirect" href="Register.php">Sign up</a></span>
+            <span><a class="redirect" href="register.php">Sign up</a></span>
             <div>
                 <?php echo $generalError ?>
             </div>
