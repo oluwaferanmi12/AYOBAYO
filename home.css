@@ -102,8 +102,11 @@ h1{
 .main-blog{
     font-size: 14px;
     text-decoration: none;
-    color: #ffff;
-    transition: all 0.3s ease;
+    color: #000;
+    transition: all 0.3s ease-in-out;
+}
+.main-blog a  li:hover{
+    color: #25d356;
 }
 .team-col{
     display: flex;
@@ -199,7 +202,7 @@ ul{
 }
  .img{
     min-height: 100vh;
-    background-image: url(./IMAGES/pexels-edgars-kisuro-1488467\ -\ Copy.jpg);
+    background-image: linear-gradient(to right , rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 1)), url(./IMAGES/pexels-edgars-kisuro-1488467\ -\ Copy.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
