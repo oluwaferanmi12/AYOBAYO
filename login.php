@@ -51,10 +51,8 @@ include './PHPFILES/loginphp.php' ;
             <span class="question">Don't have an account?</span>
             <span><a class="redirect" href="register.php">Sign up</a></span>
             <div>
-
                 <?php echo $generalError ?>
             </div>
-            
         </form>
     </section>
     

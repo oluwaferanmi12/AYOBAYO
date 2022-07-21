@@ -10,6 +10,7 @@
     width: 100%;
     min-height: 50%;
     padding: 5px 0;
+    background-color: #fff;
     
 }
 .navbar{
@@ -18,6 +19,28 @@
    justify-content: space-between;
    align-items: center;
    padding-top: 40px;
+}
+.CTA{
+    display: flex;
+    margin-top: 30px;
+    position: relative;
+    text-decoration: none;
+}
+.styleCTA{
+    list-style: none;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 20px;
+    height: 40px;
+    width: 200px;
+    border: 1px solid #25d356;
+    color: #ffff;
+    background-color: #25d356;
+    padding: 10px;
+}
+.reg-users{
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -39,8 +62,8 @@ li{
 .stylecard{
     box-sizing: border-box;
     border-radius: 20px;
-    border: 1px solid #000;
-    background-color: #000;
+    border: 1px solid #fff;
+    background-color: #25d356;
     justify-content: center;
 }
 .logo{
@@ -48,12 +71,6 @@ li{
     font-size: 80px;
     font-weight: bold;
     color: #25d356;
-}
-.SVG{
-    float: right;
-    margin-top: 10px;
-    width: 40%;
-    height: 200%;
 }
 
 .styleLogo{
@@ -76,8 +93,26 @@ h1{
     box-sizing: border-box;
     border-radius: 20px;
     background-color: #ffff;
-    color: #25d356;
+    color: #fff;
     padding: 20px;
+}
+.stylecard{
+    padding: 20px;
+}
+.main-blog{
+    font-size: 14px;
+    text-decoration: none;
+    color: #ffff;
+    transition: all 0.3s ease;
+}
+.team-col{
+    display: flex;
+    width: 25%;
+    padding: 10px 10px;
+    border-radius: 80px;
+    border: 1px solid #25d356;
+    margin-left: 40px;
+    margin-top: 60px;
 }
 h2{
     text-align: center;
@@ -85,15 +120,16 @@ h2{
     text-transform: capitalize;
 }
 .team{
+    display: flex;
     padding: 80px 0;
 }
-.team-col{
-    width: 25%;
-    padding: 0 15px;
+.team-col li{
+    list-style: none;
+    
 }
 .footer{
     background-color: #25d356;
-    padding: 20px 0;
+    padding: 20px 40px 20px 0;
 }
 .content{
     width: 100%;
@@ -134,6 +170,7 @@ ul{
     font-size: 16px;
     font-weight: 300px;
     text-decoration: none;
+    padding-top: 15px;
     color: #ffff;
     display: flex;
     transition: all 0.3s ease;
@@ -146,26 +183,26 @@ ul{
 }
 .footer-col .social-links a{
     height: 40px;
-    width :40px;
-    background-color: rgb(225, 225, 225, 0.2);
-    margin: 0 10px 10px 0;
+    width :60px;
+    background-color: #000;
+    margin: 0 20px 20px 0;
     text-align: center;
     line-height: 40px;
-    border-radius: 50%;
+    border-radius: 20%;
     color: #ffff;
     transition: all 0.5 ease;
 
 }
-.img{
-    background-image:url(./IMAGES/pexels-edgars-kisuro-1488467\ -\ Copy.jpg);
+.footer-col .social-links a :hover{
+    color: #000;
+    background-color: #25d356;
+}
+ .img{
+    min-height: 100vh;
+    background-image: url(./IMAGES/pexels-edgars-kisuro-1488467\ -\ Copy.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
-    background-repeat:no-repeat;
     background-attachment: fixed;
-    min-height: 80vh;
-    min-width: 80vw;
-    opacity: #0000;
-    background:linear-gradient(rgba(0,0,0,0) rgba(0,0,0,0));
- 
  }
-
+ 
 
