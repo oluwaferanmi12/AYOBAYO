@@ -11,13 +11,14 @@
     <link rel="stylesheet" href="./STYLES/blog.css">
 </head>
 <body>
-    <div class="error"><?php echo $generalError?></div>
     <header class="head">
 
         <div class="logo">
             lo<span class="stylelogo">r</span>e<span class="stylelogo">m</span>
         </div>
     </header>
+    <p class="error"><?php echo $generalError?></p>
+
     <section>
         <h2>Create blog</h2>
     </section>
@@ -44,7 +45,7 @@
                 <label for="content">Content</label>
             </div>
             <div>
-                <textarea class="textarea" placeholder="Enter your description" cols="30" rows="10"></textarea>
+                <textarea class="textarea" name="post_content" id="content" placeholder="Enter your description" cols="30" rows="10"></textarea>
             </div>
             <p><?php echo $postContentError ?></p>
             <p><?php echo $postContentLenError ?></p>
