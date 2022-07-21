@@ -3,13 +3,68 @@
     margin: 0;
     padding: 0;
     font-family: 'poppins',sans-serif ;
-   background-color: #ffff;
 }
 .head{
     display: flex;
+    justify-content: space-between;
     width: 100%;
-    min-height: 50px;
+    min-height: 50%;
+    padding: 5px 0;
+    background-color: #fff;
     
+}
+.navbar{
+   display: flex;
+   position: relative;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 40px;
+}
+.CTA{
+    display: flex;
+    margin-top: 30px;
+    position: relative;
+    text-decoration: none;
+}
+.styleCTA{
+    list-style: none;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 20px;
+    height: 40px;
+    width: 200px;
+    border: 1px solid #25d356;
+    color: #ffff;
+    background-color: #25d356;
+    padding: 10px;
+}
+.reg-users{
+    align-items: center;
+    justify-content: center;
+}
+
+
+li{
+    margin-left: 30px;
+} 
+.stylenav{
+    list-style: none;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 20px;
+    border: 1px solid #25d356;
+    height: 40px;
+    width: 200px;
+    padding: 10px;
+    background-color:#25d356 ;
+    color: #ffff;
+}
+.stylecard{
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 1px solid #fff;
+    background-color: #25d356;
+    justify-content: center;
 }
 .logo{
     display: flex;
@@ -17,9 +72,137 @@
     font-weight: bold;
     color: #25d356;
 }
+
 .styleLogo{
     color:#000 ;
 }
-.navbar li{
-    display: flex;
+.Logo{
+    color: #ffff;
+    font-size: 80px;
+    font-weight: bold;
 }
+h1{
+    text-align: center;
+    text-transform: capitalize;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #25d356;
+}
+.blogcards{
+    display: flex;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: #ffff;
+    color: #fff;
+    padding: 20px;
+}
+.stylecard{
+    padding: 20px;
+}
+.main-blog{
+    font-size: 14px;
+    text-decoration: none;
+    color: #ffff;
+    transition: all 0.3s ease;
+}
+.team-col{
+    display: flex;
+    width: 25%;
+    padding: 10px 10px;
+    border-radius: 80px;
+    border: 1px solid #25d356;
+    margin-left: 40px;
+    margin-top: 60px;
+}
+h2{
+    text-align: center;
+    font-size: 30px;
+    text-transform: capitalize;
+}
+.team{
+    display: flex;
+    padding: 80px 0;
+}
+.team-col li{
+    list-style: none;
+    
+}
+.footer{
+    background-color: #25d356;
+    padding: 20px 40px 20px 0;
+}
+.content{
+    width: 100%;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-col{
+    width: 25%;
+    padding: 0 15px;
+}
+ul{
+    list-style: none;
+}
+.footer-col h4{
+    font-size: 18px;
+    color: #ffff;
+    text-decoration: none;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4 ::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li :not(:last-child){
+    margin-bottom: 10px;
+}
+.footer-col ul li a {
+    font-size: 16px;
+    font-weight: 300px;
+    text-decoration: none;
+    padding-top: 15px;
+    color: #ffff;
+    display: flex;
+    transition: all 0.3s ease;
+
+}
+.footer-col ul li a :hover {
+    color: #000;
+    padding-left: 8px;
+
+}
+.footer-col .social-links a{
+    height: 40px;
+    width :60px;
+    background-color: #000;
+    margin: 0 20px 20px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 20%;
+    color: #ffff;
+    transition: all 0.5 ease;
+
+}
+.footer-col .social-links a :hover{
+    color: #000;
+    background-color: #25d356;
+}
+ .img{
+    min-height: 100vh;
+    background-image: url(./IMAGES/pexels-edgars-kisuro-1488467\ -\ Copy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+ }
+ 
+

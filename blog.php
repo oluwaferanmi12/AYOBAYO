@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./STYLES/blog.css">
 </head>
 <body>
-    <div><?php echo $generalError?></div>
+    <div class="error"><?php echo $generalError?></div>
     <header class="head">
 
         <div class="logo">
@@ -29,26 +29,25 @@
             <div>
                 <input class="styletitle" type="text" id="title" placeholder="Enter title" name="post_title" >
             </div>
-            <h3><?php echo $postTitleError ?></h3>
-            <h3><?php echo $postTitleLenError ?></h3>
+            <p class="erroralert"><?php echo $postTitleError ?></p>
+            <p><?php echo $postTitleLenError ?></p>
 
             <div>
                 <label for="image">Add image</label>
+                <p><input class="fileuploadinput" type="file" name="image" onchange="readURL(this)" accept="image/"></p>
             </div> 
-            <div>
-                <input class="fileuploadinput" type="file" name="image" onchange="readURL(this)" accept="image/">
-            </div>
-            <h3><?php echo $imageExisteneceError ?></h3>
-            <h3><?php echo $imageExtensionError ?></h3>
-            <h3><?php echo $imageSizeError ?></h3>
+
+            <p><?php echo $imageExisteneceError ?></p>
+            <p><?php echo $imageExtensionError ?></p>
+            <p><?php echo $imageSizeError ?></p>
             <div>
                 <label for="content">Content</label>
             </div>
             <div>
-                <textarea class="styletextarea" name="post_content" id="content" placeholder="Enter your description" cols="30" rows="10"></textarea>
+                <textarea class="textarea" placeholder="Enter your description" cols="30" rows="10"></textarea>
             </div>
-            <h3><?php echo $postContentError ?></h3>
-            <h3><?php echo $postContentLenError ?></h3>
+            <p><?php echo $postContentError ?></p>
+            <p><?php echo $postContentLenError ?></p>
             
             <div>
                 <button name= "submitBlogForm" class="button" type="submit">Submit</button>

@@ -4,6 +4,7 @@
     padding: 0;
     font-family: 'poppins',sans-serif;
     background: #ffff;
+    box-sizing: border-box;
 }
 .head{
     display: flex;
@@ -40,6 +41,18 @@ h2{
     font-size: 40px;
     font-weight: bold;
 }
+p{
+    font-size: 12px;
+    color: red;
+}
+.erroralert{
+    margin-top: -15px;
+    margin-bottom: 15px;
+}
+.error{
+    font-size: 14px;
+    color: red;
+}
 .styletitle{
     border-radius: 20px;
     border: 1px solid#25D366;
@@ -50,9 +63,10 @@ h2{
     text-indent: 20px;
     margin-bottom: 20px;
 }
-.styletextarea{
-    border-radius: 10px;
+.textarea{
+    border-radius: 20px;
     border: 1px solid #25D366;
+    padding: 16px;
     outline: none;
     text-indent: 10px;
 
@@ -60,6 +74,7 @@ h2{
 .button{
     border-radius: 20px;
     border: 1px solid #25D366;
+    margin-top: 20px;
     height: 40px;
     width: 250px;
     font-size: 18px;
@@ -72,9 +87,7 @@ form input:focus{
     border: 1px solid blue;
     transition: all 0.3s ease;
 }
-.textarea :focus{
-    cursor:text;
-}
+
 @media (max-width:600px) {
     .container{
         max-width: 100%;
