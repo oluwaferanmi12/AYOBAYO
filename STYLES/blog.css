@@ -87,13 +87,13 @@ form input:focus{
     border: 1px solid blue;
     transition: all 0.3s ease;
 }
-
 @media (max-width:600px) {
     .container{
         max-width: 100%;
         border: none;
         border-radius: none;
         margin-left: 200px;
+        padding-left: 10px;
     }
 }
 @media (max-width:768px) {
@@ -113,6 +113,8 @@ form input:focus{
         margin-left: 200px;
     }
 }
+
+
 
 
 
