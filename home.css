@@ -81,12 +81,32 @@ li{
     font-size: 80px;
     font-weight: bold;
 }
+h4{
+    text-align: center;
+    font-size: 16px;
+    color: #000;
+    margin-top:20px ;
+}
+h6{
+    font-size: 60px;
+    color: black;
+    margin-left: 20px;
+}
+.img p{
+    width: 30%;
+    margin-top: 20px;
+    margin-left: 20px;
+}
 h1{
     text-align: center;
     text-transform: capitalize;
     margin-top: 20px;
     margin-bottom: 20px;
     color: #25d356;
+}
+.stylecard p{
+    width: 80%;
+
 }
 .blogcards{
     display: flex;
@@ -102,11 +122,8 @@ h1{
 .main-blog{
     font-size: 14px;
     text-decoration: none;
-    color: #000;
+    color: blue;
     transition: all 0.3s ease-in-out;
-}
-.main-blog a  li:hover{
-    color: #25d356;
 }
 .team-col{
     display: flex;
@@ -116,6 +133,19 @@ h1{
     border: 1px solid #25d356;
     margin-left: 40px;
     margin-top: 60px;
+}
+.team-col img{
+    height: 150px;
+    width: 150px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 4px solid #25d356;
+}
+.team-col p{
+    width: 70%;
 }
 h2{
     text-align: center;
@@ -173,13 +203,14 @@ ul{
     font-size: 16px;
     font-weight: 300px;
     text-decoration: none;
+    text-align: center;
     padding-top: 15px;
     color: #ffff;
     display: flex;
     transition: all 0.3s ease;
 
 }
-.footer-col ul li a :hover {
+.row .footer-col ul li a :hover {
     color: #000;
     padding-left: 8px;
 
@@ -189,6 +220,8 @@ ul{
     width :60px;
     background-color: #000;
     margin: 0 20px 20px 0;
+    margin-right: 50px;
+    padding: 5px 10px 5px 10px;
     text-align: center;
     line-height: 40px;
     border-radius: 20%;
@@ -207,5 +240,264 @@ ul{
     background-size: cover;
     background-attachment: fixed;
  }
+ @media (max-width:600px) {
+    .head{
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        
+    }
+    .navbar{
+        width: -100px;
+        margin-top: -20px;
+
+
+    }
+    .logo{
+        font-size: 40px;
+
+    }
+    .stylenav{
+        height: 20px;
+        width: 100px;
+        padding: 2px;
+        font-size: 10px;
+
+    }
+    h6{
+        font-size: 30px;
+        margin-top: 10px;
+        margin-left:  10px;
+        
+    }
+    .img p{
+        width :50%;
+        margin-top: -10px;
+        font-size: 10px;
+
+    }
+    .CTA{
+        margin-top: 10px;
+    }
+    .styleCTA{
+        height: 20px;
+        width: 100px;
+        padding: 2px;
+        font-size: 10px;
+    }
+    h4{
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    h1{
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+    }
+    h3{
+        font-size: 10px;
+    }
+    .stylecard p {
+        height: 20px;
+        font-size: 8px;
+    }
+    .blogcards{
+        padding: 5px;
+
+    }
+    .main-blog {
+        font-size: 5px;
+
+    }
+    h2{
+        margin-top: -40px;
+        margin-bottom: -20px;
+        font-size: 20px;
+
+    }
+    .team-col{
+        border-radius: 40px;
+    }
+    .team-col img{
+        height: 100px;
+        width: 100px;
+        margin-left: -20px;
+    }
+    .team-col p{
+        font-size: 8px;
+        width: 100%;
+
+    }
+    .Logo{
+        font-size: 40px;
+        margin-bottom: 50px;
+
+    }
+    .footer{
+        padding: 10px 20px 10px 0;
+    }.footer-col h4{
+        font-size: 14px;
+    }
+    .footer-col ul li a {
+        font-size: 14px;
+    }
+    .footer-col .social-links a {
+        width: 30px;
+    }
+
+}
+@media (max-width:768px) {
+    .head{
+        width: 100%;
+    }
+    .navbar{
+        width: -100px;
+        margin-top: -20px;
+    }
+    .logo{
+        font-size: 60px;
+    }
+    .stylenav{
+        height: 20px;
+        width: 100px;
+        padding: 4px;
+        font-size: 12px;
+        margin-bottom: -10px;
+
+    }
+    h6{
+        font-size: 40px;
+        margin-top: 10px;
+        margin-left:  10px;
+        
+    }
+    .img p{
+        width :50%;
+        margin-top: -10px;
+        font-size: 12px;
+
+    }
+    .CTA{
+        margin-top: 10px;
+    }
+    .styleCTA{
+        height: 20px;
+        width: 100px;
+        padding: 4px;
+        font-size: 12px;
+    }
+    .stylecard p {
+        height: 20px;
+        font-size: 8px;
+    }
+    .blogcards{
+        padding: 5px;
+
+    }
+    .main-blog {
+        font-size: 5px;
+
+    }
+    .team-col{
+        border-radius: 40px;
+    }
+    .team-col img{
+        height: 100px;
+        width: 100px;
+        margin-left: -20px;
+    }
+    .team-col p{
+        font-size: 8px;
+        width: 100%;
+
+    }
+    .Logo{
+        font-size: 60px;
+        margin-bottom: 50px;
+
+    }
+    
+}
+@media (max-width:992) {
+    .head{
+        width: 100%;
+    }
+    .navbar{
+        width: -100px;
+        margin-top: -20px;
+    }
+    .logo{
+        font-size: 60px;
+    }
+    .stylenav{
+        height: 20px;
+        width: 100px;
+        padding: 4px;
+        font-size: 12px;
+        margin-bottom: -10px;
+
+    }
+    h6{
+        font-size: 40px;
+        margin-top: 10px;
+        margin-left:  10px;
+        margin-bottom: 20px;
+        
+    }
+    .img p{
+        width :50%;
+        margin-top: -20px;
+        font-size: 12px;
+
+    }
+    .CTA{
+        margin-top: 10px;
+    }
+    .styleCTA{
+        height: 20px;
+        width: 100px;
+        padding: 2px;
+        font-size: 10px;
+    }
+    .stylecard p {
+        height: 20px;
+        font-size: 8px;
+    }
+    .blogcards{
+        padding: 5px;
+
+    }
+    .main-blog {
+        font-size: 5px;
+
+    }
+    .team-col{
+        border-radius: 40px;
+    }
+    .team-col img{
+        height: 100px;
+        width: 100px;
+        margin-left: -20px;
+    }
+    .team-col p{
+        font-size: 8px;
+        width: 100%;
+
+    }
+    .Logo{
+        font-size: 60px;
+        margin-bottom: 50px;
+
+    }
+    
+    
+    
+    
+}
+
+
+
+
  
 
