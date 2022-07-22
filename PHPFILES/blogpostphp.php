@@ -8,7 +8,7 @@ $imageExisteneceError = $imageExtensionError = $imageSizeError = '';
 if (isset($_POST['submitBlogForm'])){
 
     $postTitle = $_POST['post_title'];
-    $postContent = $_POST['post_content'];
+    $postContent = $_POST['post_content'];  
     
     $postTitle = mysqli_escape_string($conn, $postTitle);
     $postContent = mysqli_escape_string($conn, $postContent);

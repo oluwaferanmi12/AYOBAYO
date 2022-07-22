@@ -9,11 +9,8 @@
 //             $stmt = null;
 //             header("location: ../register.php?error=stmtfailed");
 //             exit();
-//         }  
+//         }
 //         $stmt = null;   
-            
-
-        
 
 //     protected function checkUser($id, $email){
 //         $stmt = $this-> connect()->prepare('SELECT id from users WHERE id = ? OR email = ?;');
@@ -32,7 +29,7 @@
 //         else{
 //             $resultCheck = true;
 //         }
-
+        
 //         return $resultCheck;
         
         
