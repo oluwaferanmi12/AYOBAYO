@@ -22,15 +22,13 @@ if (isset($_POST['submitBlogForm'])){
 
             $postTitleLenError = 'post title should be not be less than five characters';
         
-        }elseif($postContentLength < 20){
+        }elseif($postContentLength < 100){
 
-            
-            $postContentLenError = 'post content should not be less than twenty characters';
+            $postContentLenError = 'post content should not be less than hundred characters';
 
         }else{
             if(isset($_FILES['image'])){
-
-
+                
                 $generalError = '';
                 $fileName = $_FILES['image']['name'];
                 $fileSize = $_FILES['image']['size'];
@@ -75,8 +73,15 @@ if (isset($_POST['submitBlogForm'])){
         }
     }
 }
+?>
+<?php
+// $selectBlogpostQuery = "SELECT * FROM blogpost ";
+// $selectBlogpostQueryResult = mysqli_query($conn, $selectBlogpostQuery);
+// while($row = mysqli_fetch_assoc($selectBlogpostQueryResult)){
+//     $postTitle = $row['post_title'];
+//     $postContent = $row['post_content'];
+//     $postImage = $row['image'];
 
-
-
-
+// }
+?>
 

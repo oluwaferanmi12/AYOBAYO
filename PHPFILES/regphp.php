@@ -24,13 +24,18 @@ if (isset($_POST['Register'])){
     $sameEmailError = '';
     $pinLengthError ='';
 
-    if(!empty($name) && !empty($email) && !empty($dob) && !empty($country) && !empty($nonNigState) &&!empty($state) && !empty($password)){
+    if($state && $nonNigState){
+        $newState  = '';
+    }
+    else{
+        $newState = $state ? $state : $nonNigState;
+    }
 
+    if(!empty($name) && !empty($email) && !empty($dob) && !empty($country) && !empty($password) && !empty($newState)){
         
         $password = md5($password);
         $numOFEmail = mysqli_num_rows(mysqli_query($conn, "SELECT email FROM users WHERE email = '$email' "));
         
-
         if($lengthOfPassword < 8){
 
             $pinLengthError = 'password should be not be less than eight characters';
@@ -38,19 +43,19 @@ if (isset($_POST['Register'])){
         }elseif($numOFEmail > 0){
             
             $sameEmailError = 'Email already Exist';
-            
-
         
-        }else{
-            
-            $query = 'INSERT INTO users (name, email, dob, country, nonNigState, state, password)';
-            $query .=  "VALUES ('$name', '$email', '$dob', '$country', '$nonNigState', '$state', '$password') ";
+        }
+        else{
+
+            $query = 'INSERT INTO users (name, email, dob, country, state, password)';
+            $query .=  "VALUES ('$name', '$email', '$dob', '$country', '$newState', '$password') ";
             $result =  mysqli_query($conn, $query);
             if  (!$result) {
                 die ('query failed');
-            
+                
+                
             }
-            $totalError = 'you have registered successfully';
+            $totalError = 'you have registered successfully'; 
             $nameError = $emailError = $dobError  = $countryError = $stateError = $passwordError = "";
             header("location: login.php");
         }
@@ -80,8 +85,8 @@ if (isset($_POST['Register'])){
         }else{
             $countryError = '';
         }
-        if(empty($state)){
-            $stateError = 'state is required';
+        if(empty($newState)){
+            $stateError = 'a state is required';
         }else{
             $stateError = '';
         }
@@ -98,8 +103,5 @@ if (isset($_POST['Register'])){
     $sameEmailError = "";
     $pinLengthError ='';
 }
+
 ?>
-
-
-
-

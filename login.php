@@ -2,7 +2,7 @@
 
 
 session_start();
-include './PHPFILES/loginphp.php' ;
+include './PHPFILES/loginphp.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">

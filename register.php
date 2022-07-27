@@ -38,12 +38,12 @@ session_start();
             <div>
                 <div class="">
                 
-                 <label class="email" for="email">Email</label>
+                <label class="email" for="email">Email</label>
             
                 </div>
                 <div class="">
 
-                 <input class="styleInput" type="email" name="email" id="email" placeholder="Enter email">
+                <input class="styleInput" type="email" name="email" id="email" placeholder="Enter email">
                 </div>
 
                 <div class="alert">

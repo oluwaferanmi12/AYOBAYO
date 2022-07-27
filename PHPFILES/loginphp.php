@@ -22,7 +22,7 @@ if (isset($_POST['login'])){
         $row = mysqli_num_rows($result);
         $dbDetails = mysqli_fetch_assoc($result);
 
-        if($row === 1){
+        if($row === 1){         
 
             if($password !== $dbDetails['password']){
 
