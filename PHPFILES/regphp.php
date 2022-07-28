@@ -40,10 +40,10 @@ if (isset($_POST['Register'])){
 
             $pinLengthError = 'password should be not be less than eight characters';
             
-        }elseif($numOFEmail > 0){
+        }
+        if($numOFEmail > 0){   
             
             $sameEmailError = 'Email already Exist';
-        
         }
         else{
 

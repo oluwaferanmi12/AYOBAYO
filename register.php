@@ -49,6 +49,7 @@ session_start();
                 <div class="alert">
                   <?php echo $emailError ?>
                 </div>
+                <div class="alert"> <?php echo $sameEmailError?></div>
             </div> 
             <div>
                <div class="">
@@ -428,7 +429,7 @@ session_start();
                     <?php echo $passwordError ?>
                 </div>
             </div>
-            <div class="alert"> <?php echo $sameEmailError?></div>
+            <!-- <div class="alert"> <?php echo $sameEmailError?></div> -->
             <div class="alert"> <?php echo $pinLengthError?></div>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
             <div style="text-align:center">
