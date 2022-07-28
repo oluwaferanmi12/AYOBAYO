@@ -89,13 +89,14 @@ h4{
 }
 h6{
     font-size: 60px;
-    color: black;
+    color: #fff;
     margin-left: 20px;
 }
 .img p{
     width: 30%;
     margin-top: 20px;
     margin-left: 20px;
+    color: #fff;
 }
 h1{
     text-align: center;
@@ -186,11 +187,11 @@ ul{
     margin-bottom: 20px;
     font-weight: 500;
     position: relative;
+    margin-left: -100px;
 }
 .footer-col h4 ::before{
     content: '';
     position: absolute;
-    left: 0;
     bottom: -10px;
     height: 2px;
     box-sizing: border-box;
@@ -419,7 +420,7 @@ ul{
     }
     
 }
-@media (max-width:992) {
+@media (max-width:992px) {
     .head{
         width: 100%;
     }
