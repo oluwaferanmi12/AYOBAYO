@@ -1,5 +1,4 @@
 <?php include './PHPFILES/regphp.php' ;
-
 session_start();    
 ?>
 <!DOCTYPE html>
@@ -26,8 +25,8 @@ session_start();
             <div class="">
                 <label class="name" for="name">Name</label>
                 <div>
-                    <input class="styleInput" type="text" name="name" id="name" placeholder="Enter fullname">
-
+                    <input class="styleInput" type="text" name="name" id="name" placeholder="Enter fullname" value=
+                    <?php if(isset($_POST['name'])){ echo htmlentities( $_POST['name']);} ?> >
                 </div>
                 <div class="alert">
                 <?php echo $nameError ?>
@@ -43,7 +42,8 @@ session_start();
                 </div>
                 <div class="">
 
-                <input class="styleInput" type="email" name="email" id="email" placeholder="Enter email">
+                <input class="styleInput" type="email" name="email" id="email" placeholder="Enter email" value=
+                <?php if(isset($_POST['email'])){ echo htmlentities( $_POST['email']);} ?> >
                 </div>
 
                 <div class="alert">
@@ -56,7 +56,8 @@ session_start();
                  <label class="birth date"  for="birth date">Date of Birth</label>
                </div>    
                <div class="">
-                 <input class="styleInput" type="date" id="date" name="dob" value="yyyy-mm-dd" min="1900-01-01" max="2022-12-31">
+                 <input class="styleInput" type="date" id="date" name="dob"  min="1900-01-01" max="2022-12-31" value=
+                 <?php if(isset($_POST['dob'])){ echo htmlentities( $_POST['dob']);} ?> >
                </div>
             
                <div class="alert">
@@ -64,7 +65,6 @@ session_start();
                </div>
             
             </div>
-
 
             <div>
                <div class="" style="margin-bottom:12px">
@@ -79,7 +79,7 @@ session_start();
                 
             </div>
             <select class="" id="country" name="country">
-             
+            
                 <option class="" value="">
                     <div class="countries">
                         Select country
@@ -359,12 +359,14 @@ session_start();
                 </div>
 
                 <div>
-                   <input class="styleInput" type="text" id="state" name="nonNigState" placeholder=" Enter state">
+                   <input class="styleInput" type="text" id="state" name="nonNigState" placeholder=" Enter state" value=
+                <?php if(isset($_POST['nonNigState'])){ echo htmlentities( $_POST['nonNigState']);} ?> >
                 </div>
 
                 <div class="exception">
                   (*For Non-nigerians Only*)  
                 </div>
+                
                
             </div>
             <select class="" id="state" name="state">
@@ -427,10 +429,9 @@ session_start();
                 </div>
                 <div class="alert">
                     <?php echo $passwordError ?>
+                    <div class="alert"> <?php echo $lenPinError ;?></div>
                 </div>
             </div>
-            <!-- <div class="alert"> <?php echo $sameEmailError?></div> -->
-            <div class="alert"> <?php echo $pinLengthError?></div>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
             <div style="text-align:center">
                 <div >

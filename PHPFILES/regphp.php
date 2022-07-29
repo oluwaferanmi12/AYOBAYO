@@ -21,8 +21,9 @@ if (isset($_POST['Register'])){
     $nonNigState = mysqli_escape_string($conn, $nonNigState);
     $state = mysqli_escape_string($conn, $state);
     $password = mysqli_escape_string($conn, $password);
-    $sameEmailError = '';
-    $pinLengthError ='';
+    //$sameEmailError = '';
+   // $lenPinError = '';
+    
 
     if($state && $nonNigState){
         $newState  = '';
@@ -36,14 +37,11 @@ if (isset($_POST['Register'])){
         $password = md5($password);
         $numOFEmail = mysqli_num_rows(mysqli_query($conn, "SELECT email FROM users WHERE email = '$email' "));
         
-        if($lengthOfPassword < 8){
+        if($lengthOfPassword < 8 || $numOFEmail > 0){
 
-            $pinLengthError = 'password should be not be less than eight characters';
+            $lenPinError = 'password should be not be less than eight characters';
+            $sameEmailError = 'email already exist';
             
-        }
-        if($numOFEmail > 0){   
-            
-            $sameEmailError = 'Email already Exist';
         }
         else{
 
@@ -59,19 +57,18 @@ if (isset($_POST['Register'])){
             $nameError = $emailError = $dobError  = $countryError = $stateError = $passwordError = "";
             header("location: login.php");
         }
-        $pinLengthError ='';
-        
         $nameError = $emailError = $dobError  = $countryError = $stateError = $passwordError = "";
 
     }else{
         
         if (empty($name)){
             $nameError = 'name is required';
+            echo 'name is required';
         }else{
             $nameError = '';
         }
         if(empty($email)){
-            $emailError = 'email is required';
+            $emailError = 'email is required';  
         }else{
             $emailError = '';
         }
@@ -96,12 +93,13 @@ if (isset($_POST['Register'])){
             $passwordError = '';
         }
         $sameEmailError = "";
+        $lenPinError = '';
     }
 }else{
     $nameError = $emailError = $dobError  = $countryError = $stateError = $passwordError = "" ;
     $totalError = "";
     $sameEmailError = "";
-    $pinLengthError ='';
+    $lenPinError ='';
 }
 
 ?>
