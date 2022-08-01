@@ -1,3 +1,5 @@
+<?php include_once './PHPFILES/db.php'?> 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,9 +15,9 @@
     <header class="head">
         <div class="container">
             <span class="logo">lu<span class="styleLogo">X</span>e</span>
-
+  
         </div>
-   
+
         <div>
             <ul class="navbar">
                 <li><a href="login.php" class="stylenav">Login</a></li>
@@ -39,8 +41,42 @@
             <h4>Number of Registered users</h4>
         </div>
     </section>
-   
-    <div>
+        <div>
+                <h1>Blog cards</h1>
+            </div>
+            <div class="blogcards">
+                <?php
+                $selectBlogpostQuery = "SELECT * FROM blogpost ";
+                $selectBlogpostQueryResult = mysqli_query($conn, $selectBlogpostQuery); 
+                if(mysqli_num_rows($selectBlogpostQueryResult) > 0){
+                
+                    while($row = mysqli_fetch_assoc($selectBlogpostQueryResult)){
+                        $postId = $row['post_id'];
+                        $postTitle = $row['post_title'];
+                        $postContent = $row['post_content'];
+                        $postImage = $row['post_image'];
+
+                        if(strlen($postContent) > 100){
+                            $moderateContent = substr($postContent, 0, 100);
+                        }
+                        ?>
+                            <ul>
+                                <li class="stylecard"><a href=""></a><img src="./blogPhotoUpload/<?php echo $postImage ?>" alt="" width="50%">
+                                    <h3> <?php echo $postTitle ?></h3>
+                                    <p style="width: 80%;"> <?php echo $moderateContent ?></p>
+                                    <a class="main-blog" href="content.php?id=<?php echo $postId; ?>">continue reading</a>   
+                                </li>
+                            </ul>
+                        </div>    
+                        
+                        <?php
+                    }
+                    
+                }
+                ?>
+            </div>    
+        </div>   
+    <!-- <div>
         <h1>Blog cards</h1>
     </div>
     <div class="blogcards">
@@ -50,8 +86,8 @@
                 <p >Lorem ipsum dolor sit amet</p>
                 <a class="main-blog" href="content.html">continue reading</a>   
             </li>
-        </ul>
-        <ul>
+        </ul> -->
+        <!-- <ul>
             <li class="stylecard"><a href=""></a><img src="./IMAGES/backgr.jpeg" alt="" width="50%">
                 <h3>lorem ipsum dolor</h3>
                 <p>Lorem ipsum dolor sit amet </p>
@@ -74,7 +110,7 @@
                 <a class="main-blog" href="content.html">continue reading</a>   
    
             </li>
-        </ul>
+        </ul> -->
     </div>
     <section class="team">
       

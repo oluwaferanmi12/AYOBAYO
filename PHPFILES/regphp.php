@@ -21,52 +21,54 @@ if (isset($_POST['Register'])){
     $nonNigState = mysqli_escape_string($conn, $nonNigState);
     $state = mysqli_escape_string($conn, $state);
     $password = mysqli_escape_string($conn, $password);
-    $sameEmailError = '';
-    $pinLengthError ='';
+    //$sameEmailError = '';
+   // $lenPinError = '';
+    
 
-    if(!empty($name) && !empty($email) && !empty($dob) && !empty($country) && !empty($nonNigState) &&!empty($state) && !empty($password)){
+    if($state && $nonNigState){
+        $newState  = '';
+    }
+    else{
+        $newState = $state ? $state : $nonNigState;
+    }
 
+    if(!empty($name) && !empty($email) && !empty($dob) && !empty($country) && !empty($password) && !empty($newState)){
         
         $password = md5($password);
         $numOFEmail = mysqli_num_rows(mysqli_query($conn, "SELECT email FROM users WHERE email = '$email' "));
         
+        if($lengthOfPassword < 8 || $numOFEmail > 0){
 
-        if($lengthOfPassword < 8){
+            $lenPinError = 'password should be not be less than eight characters';
+            $sameEmailError = 'email already exist';
+            
+        }
+        else{
 
-            $pinLengthError = 'password should be not be less than eight characters';
-            
-        }elseif($numOFEmail > 0){
-            
-            $sameEmailError = 'Email already Exist';
-            
-
-        
-        }else{
-            
-            $query = 'INSERT INTO users (name, email, dob, country, nonNigState, state, password)';
-            $query .=  "VALUES ('$name', '$email', '$dob', '$country', '$nonNigState', '$state', '$password') ";
+            $query = 'INSERT INTO users (name, email, dob, country, state, password)';
+            $query .=  "VALUES ('$name', '$email', '$dob', '$country', '$newState', '$password') ";
             $result =  mysqli_query($conn, $query);
             if  (!$result) {
                 die ('query failed');
-            
+                
+                
             }
-            $totalError = 'you have registered successfully';
+            $totalError = 'you have registered successfully'; 
             $nameError = $emailError = $dobError  = $countryError = $stateError = $passwordError = "";
             header("location: login.php");
         }
-        $pinLengthError ='';
-        
         $nameError = $emailError = $dobError  = $countryError = $stateError = $passwordError = "";
 
     }else{
         
         if (empty($name)){
             $nameError = 'name is required';
+            echo 'name is required';
         }else{
             $nameError = '';
         }
         if(empty($email)){
-            $emailError = 'email is required';
+            $emailError = 'email is required';  
         }else{
             $emailError = '';
         }
@@ -80,8 +82,8 @@ if (isset($_POST['Register'])){
         }else{
             $countryError = '';
         }
-        if(empty($state)){
-            $stateError = 'state is required';
+        if(empty($newState)){
+            $stateError = 'a state is required';
         }else{
             $stateError = '';
         }
@@ -91,15 +93,13 @@ if (isset($_POST['Register'])){
             $passwordError = '';
         }
         $sameEmailError = "";
+        $lenPinError = '';
     }
 }else{
     $nameError = $emailError = $dobError  = $countryError = $stateError = $passwordError = "" ;
     $totalError = "";
     $sameEmailError = "";
-    $pinLengthError ='';
+    $lenPinError ='';
 }
+
 ?>
-
-
-
-

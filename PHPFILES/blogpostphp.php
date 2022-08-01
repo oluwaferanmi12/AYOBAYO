@@ -6,9 +6,10 @@ $postContentLenError = $postTitleLenError = '';
 $imageExisteneceError = $imageExtensionError = $imageSizeError = '';
 
 if (isset($_POST['submitBlogForm'])){
+    echo 'form is submitted';
 
     $postTitle = $_POST['post_title'];
-    $postContent = $_POST['post_content'];
+    $postContent = $_POST['post_content'];  
     
     $postTitle = mysqli_escape_string($conn, $postTitle);
     $postContent = mysqli_escape_string($conn, $postContent);
@@ -22,15 +23,13 @@ if (isset($_POST['submitBlogForm'])){
 
             $postTitleLenError = 'post title should be not be less than five characters';
         
-        }elseif($postContentLength < 20){
+        }elseif($postContentLength < 100){
 
-            
-            $postContentLenError = 'post content should not be less than twenty characters';
+            $postContentLenError = 'post content should not be less than hundred characters';
 
         }else{
             if(isset($_FILES['image'])){
-
-
+                
                 $generalError = '';
                 $fileName = $_FILES['image']['name'];
                 $fileSize = $_FILES['image']['size'];
@@ -75,8 +74,4 @@ if (isset($_POST['submitBlogForm'])){
         }
     }
 }
-
-
-
-
-
+?>

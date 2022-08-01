@@ -2,7 +2,7 @@
 
 
 session_start();
-include './PHPFILES/loginphp.php' ;
+include './PHPFILES/loginphp.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -32,7 +32,8 @@ include './PHPFILES/loginphp.php' ;
                 <label for="email">Email</label>
             </div>
             <div>
-                <input class="styleInput"  name="email" id="email" placeholder="Enter email">
+                <input class="styleInput"  name="email" id="email" placeholder="Enter email" value= 
+                <?php if(isset($_POST['email'])){ echo htmlentities( $_POST['email']);} ?> >>
                 <div class="erroralert" ><?php echo $emailError?></div>
             </div>
             
