@@ -27,8 +27,8 @@
     </header>
     <section class="backgroundimg">
         <div class="img">
-            <h6 style="font-size:60px; color: black; margin-left: 20px;">Welcome</h6>
-            <p style="width: 30%; margin-top: 20px; margin-left: 20px;" >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam aspernatur aut a iure, suscipit sunt veniam? Accusamus quibusdam consequuntur nisi iste officiis perspiciatis modi architecto iure optio? Voluptatem, itaque quo.</p>
+            <h6>Welcome</h6>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam aspernatur aut a iure, suscipit sunt veniam? Accusamus quibusdam consequuntur nisi iste officiis perspiciatis modi architecto iure optio? Voluptatem, itaque quo.</p>
             <div>
                 <ul class="CTA">
                     <li><a href="login.php" class="styleCTA">Login</a></li>
@@ -38,7 +38,7 @@
 
         </div>
         <div>
-            <h4 style="text-align: center; font-size: 16px;color: #000; margin-top: 20px; ">Number of Registered users</h4>
+            <h4>Number of Registered users</h4>
         </div>
     </section>
         <div>
@@ -83,14 +83,14 @@
         <ul>
             <li class="stylecard"><a href=""></a><img src="./IMAGES/backgr.jpeg" alt="" width="50%">
                 <h3>lorem ipsum dolor</h3>
-                <p style="width: 80%;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque libero alias delectus totam commodi? Vero sapiente cupiditate vitae at in!</p>
+                <p >Lorem ipsum dolor sit amet</p>
                 <a class="main-blog" href="content.html">continue reading</a>   
             </li>
         </ul> -->
         <!-- <ul>
             <li class="stylecard"><a href=""></a><img src="./IMAGES/backgr.jpeg" alt="" width="50%">
                 <h3>lorem ipsum dolor</h3>
-                <p style="width: 80%;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque libero alias delectus totam commodi? Vero sapiente cupiditate vitae at in!</p>
+                <p>Lorem ipsum dolor sit amet </p>
                 <a class="main-blog" href="content.html">continue reading</a>   
    
             </li>
@@ -98,7 +98,7 @@
         <ul>
             <li class="stylecard"><a href=""></a><img src="./IMAGES/backgr.jpeg" alt="" width="50%">
                 <h3>lorem ipsum dolor</h3>
-                <p style="width: 80%;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque libero alias delectus totam commodi? Vero sapiente cupiditate vitae at in!</p>
+                <p>Lorem ipsum dolor sit amet</p>
                 <a class="main-blog" href="content.html">continue reading</a>   
    
             </li>
@@ -106,7 +106,7 @@
         <ul>
             <li class="stylecard"><a href=""></a><img src="./IMAGES/backgr.jpeg" alt="" width="50%">
                 <h3>lorem ipsum dolor</h3>
-                <p style="width: 80%;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque libero alias delectus totam commodi? Vero sapiente cupiditate vitae at in!</p>
+                <p>Lorem ipsum dolor sit amet</p>
                 <a class="main-blog" href="content.html">continue reading</a>   
    
             </li>
@@ -122,18 +122,10 @@
                 
                 <div class="team-col">
                     <li class="cardimmage">
-                        <img src="./IMAGES/team.png" alt="IMAGES" style="border-radius:50% ;
-                          height: 150px;
-                          width: 150px;
-                          position: relative;
-                           display: flex;
-                           align-items: center;
-                           justify-content: center;
-                            border: 4px solid #25d356;"
-                        >
+                        <img src="./IMAGES/team.png" alt="IMAGES">
                         <div>
                            <h5>Nicole Luxe</h5>
-                           <p style="width:60% ;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid iste quos facere saepe autem quae iusto assumenda repellendus blanditiis natus.</p>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid iste quos facere saepe autem quae iusto assumenda repellendus blanditiis natus.</p>
                         </div>
                             
 
@@ -142,18 +134,10 @@
                 </div>
                 <div class="team-col">
                     <li class="cardimmage">
-                        <img src="./IMAGES/team.png" alt="IMAGES" style="border-radius:50% ;
-                          height: 150px;
-                          width: 150px;
-                          position: relative;
-                           display: flex;
-                           align-items: center;
-                           justify-content: center;
-                            border: 4px solid #25d356;"
-                        >
+                        <img src="./IMAGES/team.png" alt="IMAGES">
                         <div>
                            <h5>Nicole Luxe</h5>
-                           <p style="width:60% ;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid iste quos facere saepe autem quae iusto assumenda repellendus blanditiis natus.</p>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid iste quos facere saepe autem quae iusto assumenda repellendus blanditiis natus.</p>
                         </div>
                             
 
@@ -162,18 +146,10 @@
                 </div>
                 <div class="team-col">
                     <li class="cardimmage">
-                        <img src="./IMAGES/team.png" alt="IMAGES" style="border-radius:50% ;
-                          height: 150px;
-                          width: 150px;
-                          position: relative;
-                           display: flex;
-                           align-items: center;
-                           justify-content: center;
-                            border: 4px solid #25d356;"
-                        >
+                        <img src="./IMAGES/team.png" alt="IMAGES">
                         <div>
                            <h5>Nicole Luxe</h5>
-                           <p style="width:60% ;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid iste quos facere saepe autem quae iusto assumenda repellendus blanditiis natus.</p>
+                           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid iste quos facere saepe autem quae iusto assumenda repellendus blanditiis natus.</p>
                         </div>
                             
 
