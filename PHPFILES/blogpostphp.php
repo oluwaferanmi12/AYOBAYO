@@ -6,6 +6,7 @@ $postContentLenError = $postTitleLenError = '';
 $imageExisteneceError = $imageExtensionError = $imageSizeError = '';
 
 if (isset($_POST['submitBlogForm'])){
+    echo 'form is submitted';
 
     $postTitle = $_POST['post_title'];
     $postContent = $_POST['post_content'];  
@@ -74,14 +75,3 @@ if (isset($_POST['submitBlogForm'])){
     }
 }
 ?>
-<?php
-// $selectBlogpostQuery = "SELECT * FROM blogpost ";
-// $selectBlogpostQueryResult = mysqli_query($conn, $selectBlogpostQuery);
-// while($row = mysqli_fetch_assoc($selectBlogpostQueryResult)){
-//     $postTitle = $row['post_title'];
-//     $postContent = $row['post_content'];
-//     $postImage = $row['image'];
-
-// }
-?>
-

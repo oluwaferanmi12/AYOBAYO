@@ -8,7 +8,7 @@ if(!$_SESSION['email']){
 
 
 
-?>h
+?>
 
 <!DOCTYPE html>
 <html lang="en">

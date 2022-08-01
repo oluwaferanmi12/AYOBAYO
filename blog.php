@@ -36,8 +36,8 @@
 
             <div>
                 <label for="image">Add image</label>
-                <p><input class="fileuploadinput" type="file" name="image" onchange="readURL(this)" accept="image/" value="
-                <?php if(isset($_FILES['image'])){ echo $_FILES['image']['name'];} ?>    " ></p>
+                <p><input class="fileuploadinput" type="file" name="image" onchange="readURL(this)" accept="image/" value=
+                <?php if(isset($_FILES['image'])){ echo $_FILES['image']['name'];} ?>   ></p>
             </div> 
             <p><?php echo $imageExisteneceError ?></p>
             <p><?php echo $imageExtensionError ?></p>
@@ -46,8 +46,8 @@
                 <label for="content">Content</label>
             </div>
             <div>
-                <textarea class="textarea" name="post_content" id="content" placeholder="Enter your description" cols="30" rows="10" value = "
-                <?php if(isset($_POST['post_content'])){ echo htmlentities( $_POST['post_content']);} ?>   " ></textarea>
+                <textarea class="textarea" name="post_content" id="content" placeholder="Enter your description" cols="30" rows="10" value =
+                <?php if(isset($_POST['post_content'])){ echo htmlentities($_POST['post_content']);} ?>  ></textarea>
             </div>
             <p><?php echo $postContentError ?></p>
             <p><?php echo $postContentLenError ?></p>
