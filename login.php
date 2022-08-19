@@ -18,7 +18,7 @@ include './PHPFILES/loginphp.php' ;
     <header class="head">
 
         <div class="logo">
-            lo<span class="stylelogo">r</span>e<span class="stylelogo">m</span>
+            lu<span class="stylelogo">X</span>e
         </div>
     </header>
     

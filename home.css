@@ -4,11 +4,17 @@
     padding: 0;
     font-family: 'poppins',sans-serif ;
 }
+html , body{
+    width: 100%;
+    margin: 0 ;
+    padding: 0;
+    overflow-x: hidden;
+}
 .head{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    min-height: 50%;
+    min-height: 50px;
     padding: 5px 0;
     background-color: #fff;
     
@@ -78,7 +84,7 @@ li{
 }
 .Logo{
     color: #ffff;
-    font-size: 80px;
+    font-size: 60px;
     font-weight: bold;
 }
 h4{
@@ -119,6 +125,7 @@ h1{
 }
 .stylecard{
     padding: 20px;
+    margin-left: 0;
 }
 .main-blog{
     font-size: 14px;
@@ -132,7 +139,7 @@ h1{
     padding: 10px 10px;
     border-radius: 80px;
     border: 1px solid #25d356;
-    margin-left: 40px;
+    margin-left: 10px;
     margin-top: 60px;
 }
 .team-col img{
@@ -171,7 +178,7 @@ h2{
 }
 .row{
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
 }
 .footer-col{
     width: 25%;
@@ -241,41 +248,35 @@ ul{
     background-size: cover;
     background-attachment: fixed;
  }
- @media (max-width:600px) {
-    .head{
-        max-width: 100%;
-        margin: 0;
+ @media (max-width:756px) {
+    html , body{
+        width: 100%;
+        margin: 0 ;
         padding: 0;
-        
+        overflow-x: hidden;
     }
     .navbar{
         width: -100px;
         margin-top: -20px;
-
-
     }
     .logo{
         font-size: 40px;
-
     }
     .stylenav{
         height: 20px;
         width: 100px;
         padding: 2px;
         font-size: 10px;
-
     }
     h6{
-        font-size: 30px;
-        margin-top: 10px;
-        margin-left:  10px;
-        
+        font-size: 20px;
+        margin: 0 10px  10px;
+        padding-top: 50px;
     }
     .img p{
-        width :50%;
+        width: 40%;
         margin-top: -10px;
         font-size: 10px;
-
     }
     .CTA{
         margin-top: 10px;
@@ -294,163 +295,132 @@ ul{
         font-size: 20px;
         margin-top: 10px;
         margin-bottom: 10px;
-
     }
     h3{
         font-size: 10px;
     }
-    .stylecard p {
+    .stylecard p{
         height: 20px;
         font-size: 8px;
+        width: 100px;
     }
-    .blogcards{
-        padding: 5px;
-
-    }
-    .main-blog {
-        font-size: 5px;
-
-    }
-    h2{
-        margin-top: -40px;
-        margin-bottom: -20px;
-        font-size: 20px;
-
+    .main-blog{
+        font-size: 8px;
     }
     .team-col{
         border-radius: 40px;
+        width: 40%;
     }
     .team-col img{
-        height: 100px;
-        width: 100px;
-        margin-left: -20px;
+         height: 90px;
+         width: 100px;
+         margin-left: -40px;
     }
     .team-col p{
-        font-size: 8px;
+        font-size: 4px;
         width: 100%;
-
     }
-    .Logo{
-        font-size: 40px;
-        margin-bottom: 50px;
-
-    }
-    .footer{
-        padding: 10px 20px 10px 0;
-    }.footer-col h4{
-        font-size: 14px;
-    }
-    .footer-col ul li a {
-        font-size: 14px;
-    }
-    .footer-col .social-links a {
+    .footer .social-links a{
         width: 30px;
     }
-
-}
-@media (max-width:768px) {
-    .head{
-        width: 100%;
-    }
-    .navbar{
-        width: -100px;
-        margin-top: -20px;
-    }
-    .logo{
-        font-size: 60px;
-    }
-    .stylenav{
-        height: 20px;
-        width: 100px;
-        padding: 4px;
-        font-size: 12px;
-        margin-bottom: -10px;
-
-    }
-    h6{
-        font-size: 40px;
-        margin-top: 10px;
-        margin-left:  10px;
-        
-    }
-    .img p{
-        width :50%;
-        margin-top: -10px;
-        font-size: 12px;
-
-    }
-    .CTA{
-        margin-top: 10px;
-    }
-    .styleCTA{
-        height: 20px;
-        width: 100px;
-        padding: 4px;
-        font-size: 12px;
-    }
-    .stylecard p {
-        height: 20px;
-        font-size: 8px;
-    }
-    .blogcards{
-        padding: 5px;
-
-    }
-    .main-blog {
-        font-size: 5px;
-
-    }
-    .team-col{
-        border-radius: 40px;
-    }
-    .team-col img{
-        height: 100px;
-        width: 100px;
-        margin-left: -20px;
-    }
-    .team-col p{
-        font-size: 8px;
-        width: 100%;
-
-    }
     .Logo{
-        font-size: 60px;
-        margin-bottom: 50px;
-
+        font-size: 40px;
+    }
+    .footer-col h4{
+        font-size: 8px;
+    }
+    .footer-col ul li a {
+        font-size: 8px;
+    }
+    .footer-col .social-links a {
+        margin: 3px;
     }
     
-}
-@media (max-width:992px) {
+    
+ }
+ @media (max-width:480px) {
+    html , body{
+        width: 100%;
+        margin: 0 ;
+        padding: 0;
+        overflow-x: hidden;
+    }
+    .stylecard{
+        margin-left: 0;
+    }
+    .stylecard p{
+        height: 8px;
+        font-size: 6px;
+        width: 70px;
+    }
+    .main-blog{
+        font-size: 5px;
+    }
+
+    .team-col{
+        border-radius: 40px;
+        width: 50%;
+        margin-left: 75px;
+        margin-right: 75px;
+    }
+    .team-col img{
+        margin-left: -10px;
+    }
+    .team-col p{
+        font-size: 6px;
+        width: 100px;
+    }
+    .Logo{
+        font-size: 40px;
+    }
+    .footer-col h4{
+        font-size: 8px;
+        margin-left: 10px;
+    }
+    .footer-col ul li a {
+        font-size: 8px;
+    }
+    .footer-col .social-links a {
+        margin: 3px;
+    }
+    
+ }
+
+
+ /* @media (max-width:700px) {
+    html,body{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    } 
     .head{
         width: 100%;
+        margin: 0;
+        padding: 0;
     }
     .navbar{
         width: -100px;
         margin-top: -20px;
     }
     .logo{
-        font-size: 60px;
+        font-size: 40px;
     }
     .stylenav{
         height: 20px;
         width: 100px;
-        padding: 4px;
-        font-size: 12px;
-        margin-bottom: -10px;
-
+        padding: 2px;
+        font-size: 10px;
     }
     h6{
-        font-size: 40px;
-        margin-top: 10px;
-        margin-left:  10px;
-        margin-bottom: 20px;
-        
+        font-size: 20px;
+        margin: 0 10px  10px;
+        padding-top: 50px;
     }
     .img p{
-        width :50%;
-        margin-top: -20px;
-        font-size: 12px;
-
+        width: 40%;
+        margin-top: -10px;
+        font-size: 10px;
     }
     .CTA{
         margin-top: 10px;
@@ -461,44 +431,83 @@ ul{
         padding: 2px;
         font-size: 10px;
     }
-    .stylecard p {
+    h4{
+        font-size: 10px;
+        margin-top: 10px;
+    }
+    h1{
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    h3{
+        font-size: 10px;
+    }
+    .stylecard p{
         height: 20px;
         font-size: 8px;
+        width: 100px;
     }
-    .blogcards{
-        padding: 5px;
-
-    }
-    .main-blog {
-        font-size: 5px;
-
+    .main-blog{
+        font-size: 4px;
     }
     .team-col{
         border-radius: 40px;
+        width: 40%;
     }
     .team-col img{
-        height: 100px;
+        height: 90px;
         width: 100px;
-        margin-left: -20px;
+        margin-left: -40px;
     }
     .team-col p{
         font-size: 8px;
         width: 100%;
-
     }
     .Logo{
-        font-size: 60px;
-        margin-bottom: 50px;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+    .footer{
+        width: 100%;
+        min-height: 50%;
+        padding: 5px 10px 5px 10px 0;
+
+    }
+    .footer-col h4{
+       font-size: 14px;
+    }
+    .footer-col ul li a {
+        font-size: 14px;
+    }
+    .footer-col .social-links a{
+        width: 30px;
+    }
+
+    .blogcards{
+        padding: 10px;
+    }
+    .team-col{
+        border-radius: 20px;
+    }
+    .team-col p{
+        font-size: 6px;
+        width: 100%;
+    }
+    .Logo{
+        font-size: 80px;
+        margin-bottom: 25px;
+    }
+
+    .footer-col h4{
+        font-size: 10px;
+    }
+    .footer-col ul li a {
+        font-size: 10px;
+    }
+    .footer-col .social-links a {
+        width: 20px;
 
     }
     
-    
-    
-    
-}
-
-
-
-
- 
-
+ } */

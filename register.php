@@ -15,22 +15,23 @@ session_start();
 <body>
     <header class="head">
         <div class="logo">
-            lo<span class="stylelogo">r</span>e<span class="stylelogo">m</span>
+            lu<span class="stylelogo">X</span>e
         </div>
+        
     </header>
     <section>
         <h2>Register</h2>
     </section>
     <section class="container">
         <form action="register.php" method="POST">
-            <div class="">
+            <div class="main">
                 <label class="name" for="name">Name</label>
                 <div>
                     <input class="styleInput" type="text" name="name" id="name" placeholder="Enter fullname">
 
                 </div>
                 <div class="alert">
-                <?php echo $nameError ?>
+                 <?php echo $nameError ?>
 
                 </div>
 
@@ -77,7 +78,7 @@ session_start();
                 </div>
                 
             </div>
-            <select class="" id="country" name="country">
+            <select class="inputSelect" id="country" name="country">
              
                 <option class="" value="">
                     <div class="countries">
