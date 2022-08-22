@@ -68,6 +68,7 @@ li{
 .stylecard{
     box-sizing: border-box;
     border-radius: 20px;
+    width: 30%;
     border: 1px solid #fff;
     background-color: #25d356;
     justify-content: center;

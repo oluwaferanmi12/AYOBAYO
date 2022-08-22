@@ -45,46 +45,10 @@
         <h4>Number of Registered users</h4>
       </div>
     </section>
-
-    <div>
-      <h1>Blog cards</h1>
-    </div>
-    <div class="blogcards">
-      <ul>
-        <li class="stylecard">
-          <a href=""></a><img src="./IMAGES/backgr.jpeg" alt="" width="50%" />
-          <h3>lorem ipsum dolor</h3>
-          <p>Lorem ipsum dolor sit amet</p>
-          <a class="main-blog" href="content.html">continue reading</a>
-        </li>
-      </ul>
-      <ul>
-        <li class="stylecard">
-          <a href=""></a><img src="./IMAGES/backgr.jpeg" alt="" width="50%" />
-          <h3>lorem ipsum dolor</h3>
-          <p>Lorem ipsum dolor sit amet</p>
-          <a class="main-blog" href="content.html">continue reading</a>
-        </li>
-      </ul>
-      <ul>
-        <li class="stylecard">
-          <a href=""></a><img src="./IMAGES/backgr.jpeg" alt="" width="50%" />
-          <h3>lorem ipsum dolor</h3>
-          <p>Lorem ipsum dolor sit amet</p>
-          <a class="main-blog" href="content.html">continue reading</a>
-        </li>
-      </ul>
-      <ul>
-        <li class="stylecard">
-          <a href=""></a><img src="./IMAGES/backgr.jpeg" alt="" width="50%" />
-          <h3>lorem ipsum dolor</h3>
-          <p>Lorem ipsum dolor sit amet</p>
-          <a class="main-blog" href="content.html">continue reading</a>
-        </li>
-      </ul>
-        <div>
-                <h1>Blog cards</h1>
-            </div>
+     <div>
+       <h1>Blog cards</h1>
+            
+    </div> 
             <div class="blogcards">
                 <?php
                 $selectBlogpostQuery = "SELECT * FROM blogpost ";
@@ -116,7 +80,7 @@
                 }
                 ?>
             </div>    
-        </div>   
+        </div>    -->
     <!-- <div>
         <h1>Blog cards</h1>
     </div>
