@@ -1,3 +1,5 @@
+<?php include_once './PHPFILES/db.php'?> 
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,10 +9,7 @@
     <title>Homepage</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="stylesheet" href="home.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-    />
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"/>
   </head>
   <body>
     <header class="head">
@@ -24,6 +23,7 @@
           <li><a href="register.php" class="stylenav">Register</a></li>
         </ul>
       </div>
+
     </header>
     <section class="backgroundimg">
       <div class="img">
@@ -36,8 +36,8 @@
         </p>
         <div>
           <ul class="CTA">
-            <li><a href="/register.php" class="styleCTA">Register</a></li>
-            <li><a href="/blog.php," class="styleCTA">Create Blog</a></li>
+            <li><a href="register.php" class="styleCTA">Register</a></li>
+            <li><a href="blog.php," class="styleCTA">Create Blog</a></li>
           </ul>
         </div>
       </div>
@@ -82,6 +82,76 @@
           <a class="main-blog" href="content.html">continue reading</a>
         </li>
       </ul>
+        <div>
+                <h1>Blog cards</h1>
+            </div>
+            <div class="blogcards">
+                <?php
+                $selectBlogpostQuery = "SELECT * FROM blogpost ";
+                $selectBlogpostQueryResult = mysqli_query($conn, $selectBlogpostQuery); 
+                if(mysqli_num_rows($selectBlogpostQueryResult) > 0){
+                
+                    while($row = mysqli_fetch_assoc($selectBlogpostQueryResult)){
+                        $postId = $row['post_id'];
+                        $postTitle = $row['post_title'];
+                        $postContent = $row['post_content'];
+                        $postImage = $row['post_image'];
+
+                        if(strlen($postContent) > 100){
+                            $moderateContent = substr($postContent, 0, 100);
+                        }
+                        ?>
+                            <ul>
+                                <li class="stylecard"><a href=""></a><img src="./blogPhotoUpload/<?php echo $postImage ?>" alt="" width="50%">
+                                    <h3> <?php echo $postTitle ?></h3>
+                                    <p style="width: 80%;"> <?php echo $moderateContent ?></p>
+                                    <a class="main-blog" href="content.php?id=<?php echo $postId; ?>">continue reading</a>   
+                                </li>
+                            </ul>
+                        </div>    
+                        
+                        <?php
+                    }
+                    
+                }
+                ?>
+            </div>    
+        </div>   
+    <!-- <div>
+        <h1>Blog cards</h1>
+    </div>
+    <div class="blogcards">
+        <ul>
+            <li class="stylecard"><a href=""></a><img src="./IMAGES/backgr.jpeg" alt="" width="50%">
+                <h3>lorem ipsum dolor</h3>
+                <p >Lorem ipsum dolor sit amet</p>
+                <a class="main-blog" href="content.html">continue reading</a>   
+            </li>
+        </ul> -->
+        <!-- <ul>
+            <li class="stylecard"><a href=""></a><img src="./IMAGES/backgr.jpeg" alt="" width="50%">
+                <h3>lorem ipsum dolor</h3>
+                <p>Lorem ipsum dolor sit amet </p>
+                <a class="main-blog" href="content.html">continue reading</a>   
+   
+            </li>
+        </ul>
+        <ul>
+            <li class="stylecard"><a href=""></a><img src="./IMAGES/backgr.jpeg" alt="" width="50%">
+                <h3>lorem ipsum dolor</h3>
+                <p>Lorem ipsum dolor sit amet</p>
+                <a class="main-blog" href="content.html">continue reading</a>   
+   
+            </li>
+        </ul>
+        <ul>
+            <li class="stylecard"><a href=""></a><img src="./IMAGES/backgr.jpeg" alt="" width="50%">
+                <h3>lorem ipsum dolor</h3>
+                <p>Lorem ipsum dolor sit amet</p>
+                <a class="main-blog" href="content.html">continue reading</a>   
+   
+            </li>
+        </ul> -->
     </div>
     <section class="team">
       <div class="content">
