@@ -14,22 +14,23 @@ session_start();
 <body>
     <header class="head">
         <div class="logo">
-            lo<span class="stylelogo">r</span>e<span class="stylelogo">m</span>
+            lu<span class="stylelogo">X</span>e
         </div>
+        
     </header>
     <section>
         <h2>Register</h2>
     </section>
     <section class="container">
         <form action="register.php" method="POST">
-            <div class="">
+            <div class="main">
                 <label class="name" for="name">Name</label>
                 <div>
                     <input class="styleInput" type="text" name="name" id="name" placeholder="Enter fullname" value=
                     <?php if(isset($_POST['name'])){ echo htmlentities( $_POST['name']);} ?> >
                 </div>
                 <div class="alert">
-                <?php echo $nameError ?>
+                 <?php echo $nameError ?>
 
                 </div>
 
